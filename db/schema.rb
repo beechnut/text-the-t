@@ -16,11 +16,13 @@ ActiveRecord::Schema.define(version: 20140809190538) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "users", force: true do |t|
+  create_table "users", id: false, force: true do |t|
     t.string  "phone_number"
-    t.string  "language"
-    t.boolean "subscribed"
+    t.string  "language",     default: "English"
+    t.boolean "subscribed",   default: false
     t.integer "total_sent"
   end
+
+  add_index "users", ["phone_number"], name: "index_users_on_phone_number", unique: true, using: :btree
 
 end

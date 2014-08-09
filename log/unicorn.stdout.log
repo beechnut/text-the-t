@@ -1,0 +1,1 @@
+D, [2014-08-09T16:39:11.978097 #79822] DEBUG -- :   [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]

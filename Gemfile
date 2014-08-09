@@ -4,6 +4,8 @@ gem 'sinatra'
 
 gem 'tux' # console
 
+gem 'geocoder'
+
 # Postgres database
 gem 'activerecord'
 gem 'sinatra-activerecord'
