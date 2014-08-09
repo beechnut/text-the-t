@@ -48,3 +48,8 @@ D, [2014-08-09T17:04:34.031422 #80237] DEBUG -- :   [1m[35mUser Exists (1.0ms)
 valid: true
 errs: []
 user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: 1>
+D, [2014-08-09T18:04:30.409112 #80862] DEBUG -- :   [1m[36mUser Load (3.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T18:04:30.429069 #80862] DEBUG -- :   [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '15088866989' AND "users"."phone_number" != '15088866989') LIMIT 1
+valid: true
+errs: []
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: 1>

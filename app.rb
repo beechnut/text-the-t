@@ -9,6 +9,9 @@ require 'geocoder'
 
 class TextBus < Sinatra::Base
 
+  enable :sessions
+  enable :partial_underscores
+
   get '/' do
     @number = params[:From]
     @input  = params[:Body].split(" ")
@@ -26,14 +29,21 @@ class TextBus < Sinatra::Base
     redirect to("/stop/#{stop_id}")
   end
 
+
   get '/stop/:stop_id' do
-    "stop: #{params[:stop_id]},\nroutes: #{params[:routes]}"
+    @stop = params[:stop_id]
+    @routes = params[:routes]
+
+    @predictions = [{route: 1, time: '3min'}, {route: 170, time: '10m'}]
+    haml :"stops/all"
   end
 
 
   get '/address' do
     @input = session[:input]
     lat, lng = Geocoder.coordinates(@input)
+    # stop_id = @mbta.stops_by_location(lat: lat, lng: lng)
+    # @predictions = @mbta.predictions_by_stop(stop_id)
   end
 
 end
