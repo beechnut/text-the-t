@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
   validates :language, inclusion: { in: %w( English Spanish Portuguese ) }
   validates :total_sent, presence:       true,
                          numericality: { only_integer: true,
-                                        greater_than:  1     }
+                                         greater_than_or_equal:  1     }
 
 end

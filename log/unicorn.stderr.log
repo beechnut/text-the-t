@@ -206,3 +206,358 @@ ActiveRecord::RecordNotFound - Couldn't find User with 'id'="15087692973":
 I, [2014-08-09T16:40:03.695352 #79821]  INFO -- : reaped #<Process::Status: pid 79823 exit 0> worker=1
 I, [2014-08-09T16:40:03.695698 #79821]  INFO -- : reaped #<Process::Status: pid 79822 exit 0> worker=0
 I, [2014-08-09T16:40:03.696054 #79821]  INFO -- : master complete
+I, [2014-08-09T16:47:41.701734 #79923]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T16:47:41.702018 #79923]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T16:47:41.703102 #79923]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T16:47:41.703246 #79923]  INFO -- : worker=0 spawning...
+I, [2014-08-09T16:47:41.705363 #79923]  INFO -- : worker=1 spawning...
+I, [2014-08-09T16:47:41.707042 #79924]  INFO -- : worker=0 spawned pid=79924
+I, [2014-08-09T16:47:41.707822 #79924]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:47:41.707766 #79925]  INFO -- : worker=1 spawned pid=79925
+I, [2014-08-09T16:47:41.708486 #79925]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:47:41.713658 #79923]  INFO -- : master process ready
+I, [2014-08-09T16:47:42.887295 #79924]  INFO -- : worker=0 ready
+NoMethodError - undefined method `split' for nil:NilClass:
+	/Users/matt/Documents/repos/textbus/app.rb:14:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-08-09T16:47:42.945286 #79925]  INFO -- : worker=1 ready
+127.0.0.1 - - [09/Aug/2014 16:47:42] "GET / HTTP/1.1" 500 151503 0.1035
+127.0.0.1 - - [09/Aug/2014 16:47:43] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0288
+ActiveRecord::RecordNotFound - Couldn't find User with 'phone_number'="15087692973":
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/activerecord-4.1.4/lib/active_record/relation/finder_methods.rb:320:in `raise_record_not_found_exception!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/activerecord-4.1.4/lib/active_record/relation/finder_methods.rb:420:in `find_one'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/activerecord-4.1.4/lib/active_record/relation/finder_methods.rb:404:in `find_with_ids'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/activerecord-4.1.4/lib/active_record/relation/finder_methods.rb:68:in `find'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/activerecord-4.1.4/lib/active_record/querying.rb:3:in `find'
+	/Users/matt/Documents/repos/textbus/app.rb:16:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [09/Aug/2014 16:47:48] "GET /?From=%2215087692973%22&Body=%2270006%2069%2029%22 HTTP/1.1" 500 164924 0.2188
+I, [2014-08-09T16:47:56.772718 #79923]  INFO -- : reaped #<Process::Status: pid 79925 exit 0> worker=1
+I, [2014-08-09T16:47:56.773014 #79923]  INFO -- : reaped #<Process::Status: pid 79924 exit 0> worker=0
+I, [2014-08-09T16:47:56.773291 #79923]  INFO -- : master complete
+I, [2014-08-09T16:54:37.793603 #79984]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T16:54:37.793866 #79984]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T16:54:37.796690 #79984]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T16:54:37.796986 #79984]  INFO -- : worker=0 spawning...
+I, [2014-08-09T16:54:37.800871 #79985]  INFO -- : worker=0 spawned pid=79985
+I, [2014-08-09T16:54:37.801708 #79985]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:54:37.801541 #79984]  INFO -- : worker=1 spawning...
+I, [2014-08-09T16:54:37.804958 #79986]  INFO -- : worker=1 spawned pid=79986
+I, [2014-08-09T16:54:37.809408 #79986]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:54:37.905331 #79984]  INFO -- : master process ready
+I, [2014-08-09T16:54:39.399270 #79985]  INFO -- : worker=0 ready
+I, [2014-08-09T16:54:39.425490 #79986]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:54:45] "GET /?From=%2215088866989%22&Body=%2270006%2069%2029%22 HTTP/1.1" 302 - 0.1233
+127.0.0.1 - - [09/Aug/2014 16:54:45] "GET /stop/%2270006 HTTP/1.1" 200 6 0.0026
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:55:21] "GET /?From=%2215087692973%22&Body=%2270006%2069%2029%22 HTTP/1.1" 302 - 0.1305
+127.0.0.1 - - [09/Aug/2014 16:55:21] "GET /stop/%2270006 HTTP/1.1" 200 6 0.0018
+127.0.0.1 - - [09/Aug/2014 16:56:16] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 302 - 0.0154
+127.0.0.1 - - [09/Aug/2014 16:56:16] "GET /stop/70006 HTTP/1.1" 200 5 0.0019
+I, [2014-08-09T16:56:24.790271 #79984]  INFO -- : reaped #<Process::Status: pid 79986 exit 0> worker=1
+I, [2014-08-09T16:56:24.790993 #79984]  INFO -- : reaped #<Process::Status: pid 79985 exit 0> worker=0
+I, [2014-08-09T16:56:24.791560 #79984]  INFO -- : master complete
+I, [2014-08-09T16:57:29.276227 #80137]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T16:57:29.276513 #80137]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T16:57:29.277640 #80137]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T16:57:29.277791 #80137]  INFO -- : worker=0 spawning...
+I, [2014-08-09T16:57:29.279958 #80137]  INFO -- : worker=1 spawning...
+I, [2014-08-09T16:57:29.282526 #80138]  INFO -- : worker=0 spawned pid=80138
+I, [2014-08-09T16:57:29.283868 #80138]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:57:29.284399 #80139]  INFO -- : worker=1 spawned pid=80139
+I, [2014-08-09T16:57:29.285269 #80139]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:57:29.296328 #80137]  INFO -- : master process ready
+I, [2014-08-09T16:57:30.665419 #80139]  INFO -- : worker=1 ready
+I, [2014-08-09T16:57:30.707277 #80138]  INFO -- : worker=0 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:57:30] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 92 0.2499
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:57:41] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 92 0.1056
+127.0.0.1 - - [09/Aug/2014 16:57:42] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 92 0.0100
+127.0.0.1 - - [09/Aug/2014 16:57:58] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 92 0.0113
+I, [2014-08-09T16:58:00.553383 #80137]  INFO -- : reaped #<Process::Status: pid 80139 exit 0> worker=1
+I, [2014-08-09T16:58:00.553543 #80137]  INFO -- : reaped #<Process::Status: pid 80138 exit 0> worker=0
+I, [2014-08-09T16:58:00.553813 #80137]  INFO -- : master complete
+I, [2014-08-09T16:58:02.144254 #80146]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T16:58:02.144516 #80146]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T16:58:02.145613 #80146]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T16:58:02.145756 #80146]  INFO -- : worker=0 spawning...
+I, [2014-08-09T16:58:02.147909 #80146]  INFO -- : worker=1 spawning...
+I, [2014-08-09T16:58:02.149195 #80146]  INFO -- : master process ready
+I, [2014-08-09T16:58:02.149425 #80147]  INFO -- : worker=0 spawned pid=80147
+I, [2014-08-09T16:58:02.150253 #80147]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:58:02.151474 #80148]  INFO -- : worker=1 spawned pid=80148
+I, [2014-08-09T16:58:02.152180 #80148]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:58:03.231924 #80148]  INFO -- : worker=1 ready
+I, [2014-08-09T16:58:03.249927 #80147]  INFO -- : worker=0 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:58:03] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 98 0.1149
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:58:16] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 98 0.1037
+127.0.0.1 - - [09/Aug/2014 16:58:53] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 98 0.0086
+I, [2014-08-09T16:58:55.750217 #80146]  INFO -- : reaped #<Process::Status: pid 80148 exit 0> worker=1
+I, [2014-08-09T16:58:55.750522 #80146]  INFO -- : reaped #<Process::Status: pid 80147 exit 0> worker=0
+I, [2014-08-09T16:58:55.750830 #80146]  INFO -- : master complete
+I, [2014-08-09T16:58:57.637674 #80158]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T16:58:57.637942 #80158]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T16:58:57.638959 #80158]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T16:58:57.639102 #80158]  INFO -- : worker=0 spawning...
+I, [2014-08-09T16:58:57.642522 #80159]  INFO -- : worker=0 spawned pid=80159
+I, [2014-08-09T16:58:57.644156 #80159]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:58:57.658177 #80158]  INFO -- : worker=1 spawning...
+I, [2014-08-09T16:58:57.661159 #80160]  INFO -- : worker=1 spawned pid=80160
+I, [2014-08-09T16:58:57.662398 #80160]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:58:57.667601 #80158]  INFO -- : master process ready
+I, [2014-08-09T16:58:58.752157 #80159]  INFO -- : worker=0 ready
+I, [2014-08-09T16:58:58.768222 #80160]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:58:58] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 9 0.1215
+I, [2014-08-09T16:59:39.592699 #80158]  INFO -- : reaped #<Process::Status: pid 80160 exit 0> worker=1
+I, [2014-08-09T16:59:39.592836 #80158]  INFO -- : reaped #<Process::Status: pid 80159 exit 0> worker=0
+I, [2014-08-09T16:59:39.593633 #80158]  INFO -- : master complete
+I, [2014-08-09T16:59:41.088552 #80167]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T16:59:41.088804 #80167]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T16:59:41.090250 #80167]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T16:59:41.090400 #80167]  INFO -- : worker=0 spawning...
+I, [2014-08-09T16:59:41.092489 #80167]  INFO -- : worker=1 spawning...
+I, [2014-08-09T16:59:41.093400 #80167]  INFO -- : master process ready
+I, [2014-08-09T16:59:41.094481 #80168]  INFO -- : worker=0 spawned pid=80168
+I, [2014-08-09T16:59:41.095539 #80168]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:59:41.097597 #80169]  INFO -- : worker=1 spawned pid=80169
+I, [2014-08-09T16:59:41.098464 #80169]  INFO -- : Refreshing Gem list
+I, [2014-08-09T16:59:42.443437 #80169]  INFO -- : worker=1 ready
+I, [2014-08-09T16:59:42.461087 #80168]  INFO -- : worker=0 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:59:42] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 9 0.1204
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 16:59:44] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 9 0.1400
+I, [2014-08-09T16:59:59.538689 #80167]  INFO -- : reaped #<Process::Status: pid 80169 exit 0> worker=1
+I, [2014-08-09T16:59:59.538996 #80167]  INFO -- : reaped #<Process::Status: pid 80168 exit 0> worker=0
+I, [2014-08-09T16:59:59.539252 #80167]  INFO -- : master complete
+I, [2014-08-09T17:00:40.320982 #80179]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T17:00:40.321266 #80179]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T17:00:40.322425 #80179]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T17:00:40.322576 #80179]  INFO -- : worker=0 spawning...
+I, [2014-08-09T17:00:40.325126 #80179]  INFO -- : worker=1 spawning...
+I, [2014-08-09T17:00:40.327419 #80180]  INFO -- : worker=0 spawned pid=80180
+I, [2014-08-09T17:00:40.328590 #80180]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:00:40.329230 #80179]  INFO -- : master process ready
+I, [2014-08-09T17:00:40.332540 #80181]  INFO -- : worker=1 spawned pid=80181
+I, [2014-08-09T17:00:40.333508 #80181]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:00:41.633301 #80180]  INFO -- : worker=0 ready
+I, [2014-08-09T17:00:41.668302 #80181]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 17:00:41] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 9 0.1358
+I, [2014-08-09T17:00:49.231458 #80179]  INFO -- : reaped #<Process::Status: pid 80181 exit 0> worker=1
+I, [2014-08-09T17:00:49.231878 #80179]  INFO -- : reaped #<Process::Status: pid 80180 exit 0> worker=0
+I, [2014-08-09T17:00:49.233039 #80179]  INFO -- : master complete
+I, [2014-08-09T17:00:54.593747 #80185]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T17:00:54.594036 #80185]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T17:00:54.595203 #80185]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T17:00:54.595344 #80185]  INFO -- : worker=0 spawning...
+I, [2014-08-09T17:00:54.597110 #80185]  INFO -- : worker=1 spawning...
+I, [2014-08-09T17:00:54.599235 #80186]  INFO -- : worker=0 spawned pid=80186
+I, [2014-08-09T17:00:54.600094 #80186]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:00:54.602470 #80185]  INFO -- : master process ready
+I, [2014-08-09T17:00:54.605038 #80187]  INFO -- : worker=1 spawned pid=80187
+I, [2014-08-09T17:00:54.605920 #80187]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:00:55.641288 #80187]  INFO -- : worker=1 ready
+I, [2014-08-09T17:00:55.642652 #80186]  INFO -- : worker=0 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 17:00:57] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 9 0.1606
+I, [2014-08-09T17:01:17.568247 #80185]  INFO -- : reaped #<Process::Status: pid 80187 exit 0> worker=1
+I, [2014-08-09T17:01:17.568538 #80185]  INFO -- : reaped #<Process::Status: pid 80186 exit 0> worker=0
+I, [2014-08-09T17:01:17.569166 #80185]  INFO -- : master complete
+I, [2014-08-09T17:01:19.468991 #80193]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T17:01:19.469243 #80193]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T17:01:19.470310 #80193]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T17:01:19.470454 #80193]  INFO -- : worker=0 spawning...
+I, [2014-08-09T17:01:19.473671 #80193]  INFO -- : worker=1 spawning...
+I, [2014-08-09T17:01:19.474508 #80194]  INFO -- : worker=0 spawned pid=80194
+I, [2014-08-09T17:01:19.475330 #80194]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:01:19.475951 #80195]  INFO -- : worker=1 spawned pid=80195
+I, [2014-08-09T17:01:19.476706 #80195]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:01:19.483101 #80193]  INFO -- : master process ready
+I, [2014-08-09T17:01:20.791883 #80194]  INFO -- : worker=0 ready
+I, [2014-08-09T17:01:20.805087 #80195]  INFO -- : worker=1 ready
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+127.0.0.1 - - [09/Aug/2014 17:01:23] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 9 0.1173
+I, [2014-08-09T17:01:32.111839 #80193]  INFO -- : reaped #<Process::Status: pid 80194 exit 0> worker=0
+I, [2014-08-09T17:01:32.214362 #80193]  INFO -- : reaped #<Process::Status: pid 80195 exit 0> worker=1
+I, [2014-08-09T17:01:32.214728 #80193]  INFO -- : master complete
+I, [2014-08-09T17:01:53.665961 #80205]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T17:01:53.666234 #80205]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T17:01:53.667320 #80205]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T17:01:53.667460 #80205]  INFO -- : worker=0 spawning...
+I, [2014-08-09T17:01:53.669245 #80205]  INFO -- : worker=1 spawning...
+I, [2014-08-09T17:01:53.671242 #80206]  INFO -- : worker=0 spawned pid=80206
+I, [2014-08-09T17:01:53.672018 #80206]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:01:53.672916 #80205]  INFO -- : master process ready
+I, [2014-08-09T17:01:53.675311 #80207]  INFO -- : worker=1 spawned pid=80207
+I, [2014-08-09T17:01:53.676338 #80207]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:01:54.922704 #80207]  INFO -- : worker=1 ready
+I, [2014-08-09T17:01:54.923337 #80206]  INFO -- : worker=0 ready
+127.0.0.1 - - [09/Aug/2014 17:01:55] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 200 9 0.1341
+I, [2014-08-09T17:02:05.215376 #80205]  INFO -- : reaped #<Process::Status: pid 80206 exit 0> worker=0
+I, [2014-08-09T17:02:05.319852 #80205]  INFO -- : reaped #<Process::Status: pid 80207 exit 0> worker=1
+I, [2014-08-09T17:02:05.320943 #80205]  INFO -- : master complete
+I, [2014-08-09T17:02:59.339176 #80220]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T17:02:59.339753 #80220]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T17:02:59.340814 #80220]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T17:02:59.340956 #80220]  INFO -- : worker=0 spawning...
+I, [2014-08-09T17:02:59.351630 #80220]  INFO -- : worker=1 spawning...
+I, [2014-08-09T17:02:59.353345 #80221]  INFO -- : worker=0 spawned pid=80221
+I, [2014-08-09T17:02:59.354184 #80221]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:02:59.402779 #80220]  INFO -- : master process ready
+I, [2014-08-09T17:02:59.403176 #80222]  INFO -- : worker=1 spawned pid=80222
+I, [2014-08-09T17:02:59.404376 #80222]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:03:00.539002 #80221]  INFO -- : worker=0 ready
+127.0.0.1 - - [09/Aug/2014 17:03:00] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 302 - 0.1263
+127.0.0.1 - - [09/Aug/2014 17:03:00] "GET /stop/70006?routes=69,29 HTTP/1.1" 200 5 0.0046
+I, [2014-08-09T17:03:00.731037 #80222]  INFO -- : worker=1 ready
+I, [2014-08-09T17:03:24.333928 #80220]  INFO -- : reaped #<Process::Status: pid 80222 exit 0> worker=1
+I, [2014-08-09T17:03:24.334193 #80220]  INFO -- : reaped #<Process::Status: pid 80221 exit 0> worker=0
+I, [2014-08-09T17:03:24.334451 #80220]  INFO -- : master complete
+I, [2014-08-09T17:03:26.221185 #80228]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T17:03:26.221431 #80228]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T17:03:26.222605 #80228]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T17:03:26.222744 #80228]  INFO -- : worker=0 spawning...
+I, [2014-08-09T17:03:26.225270 #80228]  INFO -- : worker=1 spawning...
+I, [2014-08-09T17:03:26.226278 #80229]  INFO -- : worker=0 spawned pid=80229
+I, [2014-08-09T17:03:26.227011 #80229]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:03:26.228459 #80230]  INFO -- : worker=1 spawned pid=80230
+I, [2014-08-09T17:03:26.229170 #80230]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:03:26.236788 #80228]  INFO -- : master process ready
+I, [2014-08-09T17:03:27.222621 #80229]  INFO -- : worker=0 ready
+I, [2014-08-09T17:03:27.250386 #80230]  INFO -- : worker=1 ready
+127.0.0.1 - - [09/Aug/2014 17:03:57] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 302 - 0.1163
+127.0.0.1 - - [09/Aug/2014 17:03:57] "GET /stop/70006?routes=69,29 HTTP/1.1" 200 5 0.0217
+I, [2014-08-09T17:03:59.279211 #80228]  INFO -- : reaped #<Process::Status: pid 80230 exit 0> worker=1
+I, [2014-08-09T17:03:59.279492 #80228]  INFO -- : reaped #<Process::Status: pid 80229 exit 0> worker=0
+I, [2014-08-09T17:03:59.279808 #80228]  INFO -- : master complete
+I, [2014-08-09T17:04:00.702582 #80236]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T17:04:00.702840 #80236]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T17:04:00.704005 #80236]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T17:04:00.704153 #80236]  INFO -- : worker=0 spawning...
+I, [2014-08-09T17:04:00.706187 #80236]  INFO -- : worker=1 spawning...
+I, [2014-08-09T17:04:00.706965 #80236]  INFO -- : master process ready
+I, [2014-08-09T17:04:00.708018 #80237]  INFO -- : worker=0 spawned pid=80237
+I, [2014-08-09T17:04:00.708921 #80237]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:04:00.709090 #80238]  INFO -- : worker=1 spawned pid=80238
+I, [2014-08-09T17:04:00.709881 #80238]  INFO -- : Refreshing Gem list
+I, [2014-08-09T17:04:02.329353 #80238]  INFO -- : worker=1 ready
+I, [2014-08-09T17:04:02.399247 #80237]  INFO -- : worker=0 ready
+127.0.0.1 - - [09/Aug/2014 17:04:07] "GET /?From=15088866989&Body=70006%2069%2029 HTTP/1.1" 302 - 0.0877
+127.0.0.1 - - [09/Aug/2014 17:04:07] "GET /stop/70006?routes=69,29 HTTP/1.1" 200 26 0.0220
+127.0.0.1 - - [09/Aug/2014 17:04:13] "GET /?From=15088866989&Body=70006 HTTP/1.1" 302 - 0.0070
+127.0.0.1 - - [09/Aug/2014 17:04:13] "GET /stop/70006?routes= HTTP/1.1" 200 21 0.0017
+127.0.0.1 - - [09/Aug/2014 17:04:34] "GET /?From=15088866989&Body=70006%2069%20SL4 HTTP/1.1" 302 - 0.0668
+127.0.0.1 - - [09/Aug/2014 17:04:34] "GET /stop/70006?routes=69,SL4 HTTP/1.1" 200 27 0.0017
+I, [2014-08-09T17:05:17.947486 #80236]  INFO -- : reaped #<Process::Status: pid 80238 exit 0> worker=1
+I, [2014-08-09T17:05:17.948676 #80236]  INFO -- : reaped #<Process::Status: pid 80237 exit 0> worker=0
+I, [2014-08-09T17:05:17.948997 #80236]  INFO -- : master complete

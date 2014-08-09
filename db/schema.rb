@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20140809190538) do
     t.string  "phone_number"
     t.string  "language",     default: "English"
     t.boolean "subscribed",   default: false
-    t.integer "total_sent"
+    t.integer "total_sent",   default: 1
   end
 
   add_index "users", ["phone_number"], name: "index_users_on_phone_number", unique: true, using: :btree

@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string  :phone_number
       t.string  :language,    default: 'English'
       t.boolean :subscribed,  default: false
-      t.integer :total_sent
+      t.integer :total_sent,  default: 1
     end
 
     add_index :users, :phone_number, unique: true

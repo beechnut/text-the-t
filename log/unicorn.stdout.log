@@ -1,1 +1,50 @@
-D, [2014-08-09T16:39:11.978097 #79822] DEBUG -- :   [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 0]]
+D, [2014-08-09T17:00:57.536020 #80187] DEBUG -- :   [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:00:57.543841 #80187] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2014-08-09T17:00:57.557599 #80187] DEBUG -- :   [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:00:57.589665 #80187] DEBUG -- :   [1m[35m (0.5ms)[0m  ROLLBACK
+D, [2014-08-09T17:00:57.592177 #80187] DEBUG -- :   [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+valid: false
+errs: ["Total sent can't be blank", "Total sent is not a number"]
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: nil>
+D, [2014-08-09T17:01:23.083399 #80194] DEBUG -- :   [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:01:23.090726 #80194] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-09T17:01:23.102789 #80194] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:01:23.120642 #80194] DEBUG -- :   [1m[35m (0.3ms)[0m  ROLLBACK
+D, [2014-08-09T17:01:23.122836 #80194] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+valid: false
+errs: ["Total sent can't be blank", "Total sent is not a number"]
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: nil>
+D, [2014-08-09T17:01:55.389408 #80206] DEBUG -- :   [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:01:55.405162 #80206] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-09T17:01:55.420512 #80206] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:01:55.424744 #80206] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("phone_number") VALUES ($1) RETURNING "phone_number"  [["phone_number", "15088866989"]]
+D, [2014-08-09T17:01:55.425980 #80206] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+D, [2014-08-09T17:01:55.428535 #80206] DEBUG -- :   [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '15088866989' AND "users"."phone_number" != '15088866989') LIMIT 1
+valid: true
+errs: []
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: 1>
+D, [2014-08-09T17:03:00.619622 #80221] DEBUG -- :   [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:03:00.646309 #80221] DEBUG -- :   [1m[35mUser Exists (1.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '15088866989' AND "users"."phone_number" != '15088866989') LIMIT 1
+valid: true
+errs: []
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: 1>
+D, [2014-08-09T17:03:56.975307 #80229] DEBUG -- :   [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:03:57.001604 #80229] DEBUG -- :   [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '15088866989' AND "users"."phone_number" != '15088866989') LIMIT 1
+valid: true
+errs: []
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: 1>
+D, [2014-08-09T17:04:07.071706 #80238] DEBUG -- :   [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:04:07.092575 #80238] DEBUG -- :   [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '15088866989' AND "users"."phone_number" != '15088866989') LIMIT 1
+valid: true
+errs: []
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: 1>
+D, [2014-08-09T17:04:13.131232 #80238] DEBUG -- :   [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:04:13.133915 #80238] DEBUG -- :   [1m[35mUser Exists (1.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '15088866989' AND "users"."phone_number" != '15088866989') LIMIT 1
+valid: true
+errs: []
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: 1>
+D, [2014-08-09T17:04:34.009567 #80237] DEBUG -- :   [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-09T17:04:34.031422 #80237] DEBUG -- :   [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '15088866989' AND "users"."phone_number" != '15088866989') LIMIT 1
+valid: true
+errs: []
+user: #<User phone_number: "15088866989", language: "English", subscribed: false, total_sent: 1>
