@@ -1,5 +1,8 @@
-require "rubygems"
-require "sinatra/base"
+require 'sinatra'
+require 'sinatra/activerecord'
+require './config/environments'
+
+require './models/user'
 
 class TextBus < Sinatra::Base
 

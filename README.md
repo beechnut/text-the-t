@@ -14,6 +14,8 @@ $ git clone git@github.com:beechnut/textbus.git
 $ cd textbus
 ```
 
+We assume you've installed Ruby and RVM already.
+
 Install the dependencies
 
 ```sh

@@ -1,0 +1,7 @@
+development:
+  adapter:  postgresql
+  encoding: unicode
+  database: textbus_dev
+  host:     localhost
+  username: 
+  password: 
