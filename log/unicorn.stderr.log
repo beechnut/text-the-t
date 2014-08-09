@@ -1,0 +1,49 @@
+I, [2014-08-09T13:58:08.524897 #78215]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T13:58:08.525155 #78215]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T13:58:08.525302 #78215]  INFO -- : worker=0 spawning...
+I, [2014-08-09T13:58:08.527248 #78215]  INFO -- : worker=1 spawning...
+I, [2014-08-09T13:58:08.529311 #78216]  INFO -- : worker=0 spawned pid=78216
+I, [2014-08-09T13:58:08.530062 #78216]  INFO -- : Refreshing Gem list
+I, [2014-08-09T13:58:08.533103 #78215]  INFO -- : master process ready
+I, [2014-08-09T13:58:08.536052 #78217]  INFO -- : worker=1 spawned pid=78217
+I, [2014-08-09T13:58:08.536856 #78217]  INFO -- : Refreshing Gem list
+I, [2014-08-09T13:58:08.660933 #78217]  INFO -- : worker=1 ready
+I, [2014-08-09T13:58:08.662991 #78216]  INFO -- : worker=0 ready
+I, [2014-08-09T13:59:48.325990 #78215]  INFO -- : reaped #<Process::Status: pid 78217 exit 0> worker=1
+I, [2014-08-09T13:59:48.326266 #78215]  INFO -- : reaped #<Process::Status: pid 78216 exit 0> worker=0
+I, [2014-08-09T13:59:48.327026 #78215]  INFO -- : master complete
+I, [2014-08-09T13:59:50.265989 #78238]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T13:59:50.266258 #78238]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T13:59:50.267244 #78238]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T13:59:50.267396 #78238]  INFO -- : worker=0 spawning...
+I, [2014-08-09T13:59:50.271096 #78238]  INFO -- : worker=1 spawning...
+I, [2014-08-09T13:59:50.272872 #78239]  INFO -- : worker=0 spawned pid=78239
+I, [2014-08-09T13:59:50.273747 #78239]  INFO -- : Refreshing Gem list
+I, [2014-08-09T13:59:50.278706 #78240]  INFO -- : worker=1 spawned pid=78240
+I, [2014-08-09T13:59:50.279651 #78240]  INFO -- : Refreshing Gem list
+I, [2014-08-09T13:59:50.277894 #78238]  INFO -- : master process ready
+I, [2014-08-09T13:59:50.411119 #78239]  INFO -- : worker=0 ready
+I, [2014-08-09T13:59:50.431114 #78240]  INFO -- : worker=1 ready
+127.0.0.1 - - [09/Aug/2014 13:59:57] "GET / HTTP/1.1" 200 25 0.0347
+127.0.0.1 - - [09/Aug/2014 13:59:57] "GET /favicon.ico HTTP/1.1" 404 482 0.0295
+127.0.0.1 - - [09/Aug/2014 14:00:18] "GET / HTTP/1.1" 200 25 0.0018
+127.0.0.1 - - [09/Aug/2014 14:00:20] "GET / HTTP/1.1" 200 25 0.0018
+I, [2014-08-09T14:00:34.511189 #78238]  INFO -- : reaped #<Process::Status: pid 78240 exit 0> worker=1
+I, [2014-08-09T14:00:34.512080 #78238]  INFO -- : reaped #<Process::Status: pid 78239 exit 0> worker=0
+I, [2014-08-09T14:00:34.512760 #78238]  INFO -- : master complete
+I, [2014-08-09T14:00:36.115835 #78249]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-09T14:00:36.116127 #78249]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-09T14:00:36.121241 #78249]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-09T14:00:36.121446 #78249]  INFO -- : worker=0 spawning...
+I, [2014-08-09T14:00:36.139605 #78250]  INFO -- : worker=0 spawned pid=78250
+I, [2014-08-09T14:00:36.140548 #78250]  INFO -- : Refreshing Gem list
+I, [2014-08-09T14:00:36.187632 #78249]  INFO -- : worker=1 spawning...
+I, [2014-08-09T14:00:36.190485 #78251]  INFO -- : worker=1 spawned pid=78251
+I, [2014-08-09T14:00:36.191381 #78251]  INFO -- : Refreshing Gem list
+I, [2014-08-09T14:00:36.249093 #78249]  INFO -- : master process ready
+I, [2014-08-09T14:00:36.456828 #78250]  INFO -- : worker=0 ready
+I, [2014-08-09T14:00:36.459422 #78251]  INFO -- : worker=1 ready
+127.0.0.1 - - [09/Aug/2014 14:00:38] "GET / HTTP/1.1" 200 27 0.0302
+I, [2014-08-09T14:00:43.138133 #78249]  INFO -- : reaped #<Process::Status: pid 78251 exit 0> worker=1
+I, [2014-08-09T14:00:43.138386 #78249]  INFO -- : reaped #<Process::Status: pid 78250 exit 0> worker=0
+I, [2014-08-09T14:00:43.138533 #78249]  INFO -- : master complete
