@@ -26,17 +26,27 @@ class TextBus < Sinatra::Base
     session[:input] = @input
     session[:user]  = @user
     
-    redirect to ("/help")       if @input.match /^\s*(h(e|a)lp[\?\!]*|[\?\!]+)\s*$/i
-    redirect to ("/help/#{$1}") if @input.match /^\s*([abcde]{1})\s*$/i
-    redirect to ("save/#{$1}")  if @input.match /^\s*save\s{1}(\d+)$/i
-    redirect to ("/stops")      if @input.match /^\s*stops\s*$/i
-    redirect to ("/count")      if @input.match /^\s*count\s*$/i
+    redirect to ("/help")         if @input.match /^\s*(h(e|a)lp[\?\!]*|[\?\!]+)\s*$/i
+    redirect to ("/help/#{$1}")   if @input.match /^\s*([abcde]{1})\s*$/i
+    redirect to ("save/#{$1}")    if @input.match /^\s*save\s{1}(\d+)$/i
+    redirect to ("remove/#{$1}")  if @input.match /^\s*remove\s{1}(\d+)$/i
+    redirect to ("/stops")        if @input.match /^\s*stops\s*$/i
+    redirect to ("/count")        if @input.match /^\s*count\s*$/i
 
-    redirect to ("/settings")   if @input.match /^\s*settings\s*$/i
-    redirect to ("/contact")    if @input.match /^\s*contact\s*$/i
+    redirect to ("/settings")     if @input.match /^\s*settings\s*$/i
+    redirect to ("/contact")      if @input.match /^\s*contact\s*$/i
     
     # Send request to /address for geocoding and searching
-    redirect to("/address?address=#{@input}") if mostly_text(@input)
+    if mostly_text(@input)
+      puts "I AM REDIRECTING TO ADDRESS #{@input}"
+      stop_id = nil
+      begin
+        stop_id = @@mbta.nearest_stop_id_by_location_name(@input)
+        redirect to ("/stop/#{stop_id}")
+      rescue
+        redirect to("/no-match")
+      end
+    end
 
     @input          = @input.split(" ")
     stop_id, routes = @input.shift, @input.join(',')
@@ -88,19 +98,6 @@ class TextBus < Sinatra::Base
     haml "Sorry, there are no predictions available for that stop and/or route presently."
   end
 
-
-  get '/address' do
-    puts "address: #{params[:address]}"
-    begin
-      stop_id = @@mbta.nearest_stop_id_by_location_name(params[:address])
-    rescue NoMethodError
-      redirect to("/no-match")
-    end
-    
-    redirect to("/stop/#{stop_id}")
-  end
-
-
   get "/stops" do
     @user  = session[:user] || User.first
     @stops = @user.saved_stops
@@ -129,6 +126,21 @@ class TextBus < Sinatra::Base
   end
 
 
+  get "/remove/:stop_id" do
+    @user = session[:user] || User.first
+    @stop = OpenStruct.new({id:   params[:stop_id],
+                            name: @@mbta.stop_name(params[:stop_id]) })
+
+    saved_stops = @user.saved_stops.delete(@stop.id)
+    @user.saved_stops = saved_stops
+    if @user.save
+      haml :remove_success
+    else
+      redirect to('/no-match')
+    end
+  end
+
+
   get "/count" do
     @user = session[:user] || User.first
     haml "You have sent #{@user.total_sent} messages to TextBus."
@@ -136,7 +148,7 @@ class TextBus < Sinatra::Base
 
 
   get '/no-match' do
-    "Sorry, we couldn't find that stop."
+    haml "Sorry, we couldn't find that stop."
   end
 
   error 500 do
