@@ -529,3 +529,235 @@ D, [2014-08-10T11:45:26.874961 #89205] DEBUG -- :   [1m[36mUser Load (0.7ms)[
 D, [2014-08-10T11:45:26.875848 #89205] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
 D, [2014-08-10T11:45:26.877217 #89205] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 42]]
 D, [2014-08-10T11:45:26.880529 #89205] DEBUG -- :   [1m[35m (3.0ms)[0m  COMMIT
+D, [2014-08-10T11:46:19.777547 #89233] DEBUG -- :   [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T11:46:19.785772 #89233] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T11:46:19.792254 #89233] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 43]]
+D, [2014-08-10T11:46:19.793125 #89233] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+D, [2014-08-10T11:46:32.094555 #89232] DEBUG -- :   [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T11:46:32.102648 #89232] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T11:46:32.109415 #89232] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 44]]
+D, [2014-08-10T11:46:32.111100 #89232] DEBUG -- :   [1m[35m (1.3ms)[0m  COMMIT
+D, [2014-08-10T11:46:47.322944 #89232] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T11:46:47.323922 #89232] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T11:46:47.325205 #89232] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 45]]
+D, [2014-08-10T11:46:47.328603 #89232] DEBUG -- :   [1m[35m (3.0ms)[0m  COMMIT
+D, [2014-08-10T11:46:47.785604 #89233] DEBUG -- :   [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495473", time="913">, #<OpenStruct id="23495474", time="1513">]>
+D, [2014-08-10T11:46:57.581119 #89232] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T11:46:57.582036 #89232] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T11:46:57.583371 #89232] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 46]]
+D, [2014-08-10T11:46:57.586788 #89232] DEBUG -- :   [1m[35m (3.1ms)[0m  COMMIT
+D, [2014-08-10T11:47:23.142997 #89232] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-10T11:47:23.143972 #89232] DEBUG -- :   [1m[35m (0.4ms)[0m  BEGIN
+D, [2014-08-10T11:47:23.148691 #89232] DEBUG -- :   [1m[36mSQL (1.2ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '15088866989'[0m  [["total_sent", 13]]
+D, [2014-08-10T11:47:23.149467 #89232] DEBUG -- :   [1m[35m (0.4ms)[0m  COMMIT
+D, [2014-08-10T11:47:23.247044 #89233] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495473", time="880">, #<OpenStruct id="23495474", time="1480">]>
+D, [2014-08-10T11:47:28.901490 #89232] DEBUG -- :   [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '15088866989' LIMIT 1[0m
+D, [2014-08-10T11:47:28.902264 #89232] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2014-08-10T11:47:28.923432 #89232] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '15088866989'[0m  [["total_sent", 14]]
+D, [2014-08-10T11:47:28.924290 #89232] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+address: 106 g
+D, [2014-08-10T11:48:16.556112 #89233] DEBUG -- :   [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" IS NULL LIMIT 1[0m
+D, [2014-08-10T11:48:16.557217 #89233] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2014-08-10T11:48:16.601594 #89233] DEBUG -- :   [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."phone_number" IS NULL LIMIT 1[0m
+D, [2014-08-10T11:48:16.602586 #89233] DEBUG -- :   [1m[35m (0.3ms)[0m  ROLLBACK
+D, [2014-08-10T11:48:16.603493 #89233] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T11:48:16.607229 #89233] DEBUG -- :   [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("total_sent") VALUES ($1) RETURNING "phone_number"  [["total_sent", 2]]
+D, [2014-08-10T11:48:16.608117 #89233] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T11:55:56.482399 #89233] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+19142173618' LIMIT 1
+D, [2014-08-10T11:55:56.483443 #89233] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T11:55:56.485223 #89233] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+19142173618'  [["total_sent", 2]]
+D, [2014-08-10T11:55:56.487497 #89233] DEBUG -- :   [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T11:55:56.836815 #89232] DEBUG -- :   [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495473", time="558">, #<OpenStruct id="23495474", time="978">]>
+D, [2014-08-10T11:59:49.317325 #89233] DEBUG -- :   [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T11:59:49.318217 #89233] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T11:59:49.319531 #89233] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 1]]
+D, [2014-08-10T11:59:49.322620 #89233] DEBUG -- :   [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495473", time="265">, #<OpenStruct id="23495474", time="865">]>
+D, [2014-08-10T12:00:15.709541 #89232] DEBUG -- :   [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:00:15.710537 #89232] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:00:15.712015 #89232] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 2]]
+D, [2014-08-10T12:00:15.714513 #89232] DEBUG -- :   [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:00:15.983860 #89233] DEBUG -- :   [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495473", time="233">, #<OpenStruct id="23495474", time="833">]>
+D, [2014-08-10T12:03:30.721747 #89476] DEBUG -- :   [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:03:30.733521 #89476] DEBUG -- :   [1m[35m (3.4ms)[0m  BEGIN
+D, [2014-08-10T12:03:30.740334 #89476] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 3]]
+D, [2014-08-10T12:03:30.741187 #89476] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+D, [2014-08-10T12:03:31.070398 #89477] DEBUG -- :   [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495473", time="35">, #<OpenStruct id="23495474", time="755">, #<OpenStruct id="23495475", time="1535">]>
+D, [2014-08-10T12:04:36.240519 #89477] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:04:36.241686 #89477] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:04:36.248817 #89477] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 1]]
+D, [2014-08-10T12:04:36.252188 #89477] DEBUG -- :   [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495473", time="87">, #<OpenStruct id="23495474", time="807">, #<OpenStruct id="23495475", time="1527">]>
+D, [2014-08-10T12:05:26.326805 #89477] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:05:26.327946 #89477] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:05:26.329477 #89477] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 2]]
+D, [2014-08-10T12:05:26.331867 #89477] DEBUG -- :   [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:05:26.659501 #89476] DEBUG -- :   [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495473", time="37">, #<OpenStruct id="23495474", time="757">, #<OpenStruct id="23495475", time="1477">]>
+D, [2014-08-10T12:06:16.397564 #89502] DEBUG -- :   [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:06:16.406053 #89502] DEBUG -- :   [1m[35m (0.5ms)[0m  BEGIN
+D, [2014-08-10T12:06:16.412756 #89502] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 1]]
+D, [2014-08-10T12:06:16.413640 #89502] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495474", time="706">, #<OpenStruct id="23495475", time="1426">]>
+D, [2014-08-10T12:07:25.434344 #89517] DEBUG -- :   [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:07:25.443428 #89517] DEBUG -- :   [1m[35m (1.1ms)[0m  BEGIN
+D, [2014-08-10T12:07:25.450399 #89517] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 1]]
+D, [2014-08-10T12:07:25.451333 #89517] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+D, [2014-08-10T12:07:25.896529 #89516] DEBUG -- :   [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="15", name="15", trips=[#<OpenStruct id="23494938", time="760">]>
+#<OpenStruct id="23", name="23", trips=[#<OpenStruct id="23495024", time="940">]>
+#<OpenStruct id="28", name="28", trips=[#<OpenStruct id="23622112", time="520">]>
+#<OpenStruct id="45", name="45", trips=[#<OpenStruct id="23495095", time="460">]>
+#<OpenStruct id="66", name="66", trips=[#<OpenStruct id="23495422", time="1420">]>
+D, [2014-08-10T12:08:04.819737 #89517] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:08:04.820702 #89517] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:08:04.822064 #89517] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 2]]
+D, [2014-08-10T12:08:04.825475 #89517] DEBUG -- :   [1m[35m (3.1ms)[0m  COMMIT
+#<OpenStruct id="23", name="23", trips=[#<OpenStruct id="23495024", time="906">]>
+#<OpenStruct id="28", name="28", trips=[#<OpenStruct id="23622112", time="486">, #<OpenStruct id="23622113", time="1506">]>
+D, [2014-08-10T12:08:17.868428 #89517] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:08:17.869624 #89517] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:08:17.871056 #89517] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 3]]
+D, [2014-08-10T12:08:17.874372 #89517] DEBUG -- :   [1m[35m (3.0ms)[0m  COMMIT
+D, [2014-08-10T12:08:23.199138 #89517] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+19142173618' LIMIT 1[0m
+D, [2014-08-10T12:08:23.200031 #89517] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:08:23.201614 #89517] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+19142173618'[0m  [["total_sent", 3]]
+D, [2014-08-10T12:08:23.203986 #89517] DEBUG -- :   [1m[35m (2.1ms)[0m  COMMIT
+D, [2014-08-10T12:08:23.433414 #89516] DEBUG -- :   [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495474", time="529">, #<OpenStruct id="23495475", time="1309">]>
+D, [2014-08-10T12:08:40.089775 #89516] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:08:40.090987 #89516] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:08:40.097501 #89516] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 4]]
+D, [2014-08-10T12:08:40.099946 #89516] DEBUG -- :   [1m[35m (2.0ms)[0m  COMMIT
+D, [2014-08-10T12:09:17.559911 #89537] DEBUG -- :   [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:09:17.569123 #89537] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:09:17.576655 #89537] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 5]]
+D, [2014-08-10T12:09:17.577542 #89537] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+D, [2014-08-10T12:09:32.772284 #89538] DEBUG -- :   [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:09:32.781541 #89538] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:09:32.788194 #89538] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 6]]
+D, [2014-08-10T12:09:32.789193 #89538] DEBUG -- :   [1m[35m (0.6ms)[0m  COMMIT
+D, [2014-08-10T12:09:41.608147 #89537] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:09:41.609284 #89537] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2014-08-10T12:09:41.610756 #89537] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 7]]
+D, [2014-08-10T12:09:41.611594 #89537] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+D, [2014-08-10T12:09:50.272368 #89537] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:09:50.273545 #89537] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:09:50.275027 #89537] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 8]]
+D, [2014-08-10T12:09:50.277414 #89537] DEBUG -- :   [1m[35m (2.1ms)[0m  COMMIT
+D, [2014-08-10T12:10:27.754472 #89538] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+19142173618' LIMIT 1[0m
+D, [2014-08-10T12:10:27.755673 #89538] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:10:27.757443 #89538] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+19142173618'[0m  [["total_sent", 4]]
+D, [2014-08-10T12:10:27.760746 #89538] DEBUG -- :   [1m[35m (2.9ms)[0m  COMMIT
+D, [2014-08-10T12:10:28.008182 #89537] DEBUG -- :   [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495474", time="393">, #<OpenStruct id="23495475", time="1173">]>
+D, [2014-08-10T12:14:35.186667 #89578] DEBUG -- :   [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:14:35.195381 #89578] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:14:35.202141 #89578] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 9]]
+D, [2014-08-10T12:14:35.203424 #89578] DEBUG -- :   [1m[35m (0.5ms)[0m  COMMIT
+D, [2014-08-10T12:14:48.105515 #89579] DEBUG -- :   [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:14:48.124646 #89579] DEBUG -- :   [1m[35m (0.7ms)[0m  BEGIN
+D, [2014-08-10T12:14:48.134612 #89579] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 10]]
+D, [2014-08-10T12:14:48.141289 #89579] DEBUG -- :   [1m[35m (6.2ms)[0m  COMMIT
+D, [2014-08-10T12:14:59.219748 #89579] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:14:59.221009 #89579] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:14:59.222285 #89579] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 11]]
+D, [2014-08-10T12:14:59.224666 #89579] DEBUG -- :   [1m[35m (2.1ms)[0m  COMMIT
+D, [2014-08-10T12:14:59.367509 #89578] DEBUG -- :   [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+D, [2014-08-10T12:14:59.531024 #89578] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:14:59.545463 #89578] DEBUG -- :   [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '+15087692973' AND "users"."phone_number" != '+15087692973') LIMIT 1[0m
+D, [2014-08-10T12:14:59.547527 #89578] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "saved_stops" = $1 WHERE "users"."phone_number" = '+15087692973'  [["saved_stops", "{\"64000\"}"]]
+D, [2014-08-10T12:14:59.549895 #89578] DEBUG -- :   [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:15:16.757376 #89579] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:15:16.758178 #89579] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2014-08-10T12:15:16.759342 #89579] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 12]]
+D, [2014-08-10T12:15:16.762688 #89579] DEBUG -- :   [1m[35m (3.1ms)[0m  COMMIT
+D, [2014-08-10T12:15:16.940296 #89578] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1
+D, [2014-08-10T12:15:35.447326 #89579] DEBUG -- :   [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:15:35.448122 #89579] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2014-08-10T12:15:35.449217 #89579] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 13]]
+D, [2014-08-10T12:15:35.451564 #89579] DEBUG -- :   [1m[35m (2.0ms)[0m  COMMIT
+D, [2014-08-10T12:15:35.801877 #89578] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="15", name="15", trips=[#<OpenStruct id="23494938", time="452">]>
+#<OpenStruct id="23", name="23", trips=[#<OpenStruct id="23495024", time="452">]>
+#<OpenStruct id="28", name="28", trips=[#<OpenStruct id="23622112", time="92">, #<OpenStruct id="23622113", time="1352">]>
+#<OpenStruct id="45", name="45", trips=[#<OpenStruct id="23495095", time="152">]>
+#<OpenStruct id="66", name="66", trips=[#<OpenStruct id="23495422", time="752">, #<OpenStruct id="23495399", time="2312">]>
+D, [2014-08-10T12:15:42.967103 #89579] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:15:42.968094 #89579] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:15:42.969353 #89579] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 14]]
+D, [2014-08-10T12:15:42.971551 #89579] DEBUG -- :   [1m[35m (1.9ms)[0m  COMMIT
+#<OpenStruct id="15", name="15", trips=[#<OpenStruct id="23494938", time="376">]>
+#<OpenStruct id="23", name="23", trips=[#<OpenStruct id="23495024", time="436">]>
+#<OpenStruct id="28", name="28", trips=[#<OpenStruct id="23622112", time="76">, #<OpenStruct id="23622113", time="1336">]>
+#<OpenStruct id="45", name="45", trips=[#<OpenStruct id="23495095", time="136">]>
+#<OpenStruct id="66", name="66", trips=[#<OpenStruct id="23495422", time="796">, #<OpenStruct id="23495399", time="2296">]>
+D, [2014-08-10T12:15:51.605997 #89578] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:15:51.608864 #89578] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:15:51.610473 #89578] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 15]]
+D, [2014-08-10T12:15:51.614358 #89578] DEBUG -- :   [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+#<OpenStruct id="15", name="15", trips=[#<OpenStruct id="23494938", time="376">]>
+#<OpenStruct id="23", name="23", trips=[#<OpenStruct id="23495024", time="436">]>
+#<OpenStruct id="28", name="28", trips=[#<OpenStruct id="23622112", time="76">, #<OpenStruct id="23622113", time="1336">]>
+#<OpenStruct id="45", name="45", trips=[#<OpenStruct id="23495095", time="136">]>
+#<OpenStruct id="66", name="66", trips=[#<OpenStruct id="23495422", time="796">, #<OpenStruct id="23495399", time="2296">]>
+D, [2014-08-10T12:17:47.271456 #89578] DEBUG -- :   [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:17:47.272501 #89578] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:17:47.273976 #89578] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 16]]
+D, [2014-08-10T12:17:47.277290 #89578] DEBUG -- :   [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:17:47.759315 #89579] DEBUG -- :   [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="23", name="23", trips=[#<OpenStruct id="23495024", time="380">]>
+#<OpenStruct id="66", name="66", trips=[#<OpenStruct id="23495422", time="680">, #<OpenStruct id="23495399", time="2180">]>
+D, [2014-08-10T12:23:16.378935 #89660] DEBUG -- :   [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:23:16.387684 #89660] DEBUG -- :   [1m[35m (0.5ms)[0m  BEGIN
+D, [2014-08-10T12:23:16.394756 #89660] DEBUG -- :   [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 1]]
+D, [2014-08-10T12:23:16.395512 #89660] DEBUG -- :   [1m[35m (0.4ms)[0m  COMMIT
+D, [2014-08-10T12:23:17.097754 #89659] DEBUG -- :   [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="01", name="1", trips=[#<OpenStruct id="23495476", time="1484">]>
+D, [2014-08-10T12:24:04.238031 #89659] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:24:04.239134 #89659] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:24:04.245493 #89659] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 2]]
+D, [2014-08-10T12:24:04.247972 #89659] DEBUG -- :   [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:24:28.562058 #89659] DEBUG -- :   [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:24:28.563060 #89659] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:24:28.564352 #89659] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 3]]
+D, [2014-08-10T12:24:28.567848 #89659] DEBUG -- :   [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:24:28.950046 #89660] DEBUG -- :   [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+#<OpenStruct id="23", name="23", trips=[#<OpenStruct id="23495024", time="99">, #<OpenStruct id="23495028", time="1059">]>
+#<OpenStruct id="28", name="28", trips=[#<OpenStruct id="23622113", time="1059">, #<OpenStruct id="23622115", time="1719">]>
+#<OpenStruct id="41", name="41", trips=[#<OpenStruct id="23600850", time="519">, #<OpenStruct id="23600845", time="519">]>
+#<OpenStruct id="42", name="42", trips=[#<OpenStruct id="23600816", time="639">]>
+#<OpenStruct id="66", name="66", trips=[#<OpenStruct id="23495422", time="399">, #<OpenStruct id="23495399", time="1779">]>
+D, [2014-08-10T12:24:48.209578 #89660] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:24:48.210719 #89660] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:24:48.212170 #89660] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 4]]
+D, [2014-08-10T12:24:48.214658 #89660] DEBUG -- :   [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:24:48.548186 #89659] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1
+#<OpenStruct id="23", name="23", trips=[#<OpenStruct id="23495024", time="84">, #<OpenStruct id="23495028", time="1104">]>
+#<OpenStruct id="66", name="66", trips=[#<OpenStruct id="23495422", time="384">, #<OpenStruct id="23495399", time="1764">]>
+D, [2014-08-10T12:25:09.018860 #89659] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1[0m
+D, [2014-08-10T12:25:09.020000 #89659] DEBUG -- :   [1m[35m (0.3ms)[0m  BEGIN
+D, [2014-08-10T12:25:09.021486 #89659] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["total_sent", 5]]
+D, [2014-08-10T12:25:09.024901 #89659] DEBUG -- :   [1m[35m (3.0ms)[0m  COMMIT
+D, [2014-08-10T12:25:09.373807 #89659] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:25:09.389890 #89659] DEBUG -- :   [1m[35mUser Exists (1.7ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."phone_number" = '+15087692973' AND "users"."phone_number" != '+15087692973') LIMIT 1
+D, [2014-08-10T12:25:09.394037 #89659] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "saved_stops" = $1 WHERE "users"."phone_number" = '+15087692973'[0m  [["saved_stops", "{\"64000\"}"]]
+D, [2014-08-10T12:25:09.396240 #89659] DEBUG -- :   [1m[35m (1.8ms)[0m  COMMIT
+D, [2014-08-10T12:25:20.557254 #89660] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:25:20.558259 #89660] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:25:20.559454 #89660] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 6]]
+D, [2014-08-10T12:25:20.563011 #89660] DEBUG -- :   [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:25:20.743581 #89659] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"   ORDER BY "users"."phone_number" ASC LIMIT 1[0m
+D, [2014-08-10T12:25:58.350117 #89660] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:25:58.351024 #89660] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:25:58.352221 #89660] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 7]]
+D, [2014-08-10T12:25:58.355766 #89660] DEBUG -- :   [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+D, [2014-08-10T12:26:12.759608 #89659] DEBUG -- :   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."phone_number" = '+15087692973' LIMIT 1
+D, [2014-08-10T12:26:12.760771 #89659] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+D, [2014-08-10T12:26:12.762245 #89659] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "total_sent" = $1 WHERE "users"."phone_number" = '+15087692973'  [["total_sent", 8]]
+D, [2014-08-10T12:26:12.765663 #89659] DEBUG -- :   [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
