@@ -13695,3 +13695,183 @@ I, [2014-08-10T11:31:54.593548 #88957]  INFO -- : Refreshing Gem list
 I, [2014-08-10T11:31:54.599096 #88955]  INFO -- : master process ready
 I, [2014-08-10T11:31:55.933233 #88956]  INFO -- : worker=0 ready
 I, [2014-08-10T11:31:55.947186 #88957]  INFO -- : worker=1 ready
+127.0.0.1 - - [10/Aug/2014 11:37:05] "GET /help HTTP/1.1" 404 477 0.0349
+I, [2014-08-10T11:37:10.871587 #88955]  INFO -- : SIGWINCH ignored because we're not daemonized
+I, [2014-08-10T11:37:11.662512 #88955]  INFO -- : reaped #<Process::Status: pid 88957 exit 0> worker=1
+I, [2014-08-10T11:37:11.662665 #88955]  INFO -- : reaped #<Process::Status: pid 88956 exit 0> worker=0
+I, [2014-08-10T11:37:11.662784 #88955]  INFO -- : master complete
+I, [2014-08-10T11:37:14.372646 #89130]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T11:37:14.372965 #89130]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T11:37:14.455033 #89130]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T11:37:14.455732 #89130]  INFO -- : worker=0 spawning...
+I, [2014-08-10T11:37:14.512618 #89131]  INFO -- : worker=0 spawned pid=89131
+I, [2014-08-10T11:37:14.513598 #89131]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:37:14.505322 #89130]  INFO -- : worker=1 spawning...
+I, [2014-08-10T11:37:14.570116 #89132]  INFO -- : worker=1 spawned pid=89132
+I, [2014-08-10T11:37:14.571224 #89132]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:37:14.661304 #89130]  INFO -- : master process ready
+I, [2014-08-10T11:37:15.971564 #89132]  INFO -- : worker=1 ready
+I, [2014-08-10T11:37:15.973659 #89131]  INFO -- : worker=0 ready
+127.0.0.1 - - [10/Aug/2014 11:37:16] "GET /help HTTP/1.1" 200 63 0.3709
+NameError - undefined local variable or method `help_id' for #<TextBus:0x0000010156e0f8>:
+	/Users/matt/Documents/repos/textbus/app.rb:52:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 11:37:18] "GET /help/a HTTP/1.1" 500 166567 0.1534
+I, [2014-08-10T11:37:38.916392 #89130]  INFO -- : reaped #<Process::Status: pid 89132 exit 0> worker=1
+I, [2014-08-10T11:37:38.916655 #89130]  INFO -- : reaped #<Process::Status: pid 89131 exit 0> worker=0
+I, [2014-08-10T11:37:38.917487 #89130]  INFO -- : master complete
+I, [2014-08-10T11:37:40.961725 #89137]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T11:37:40.961988 #89137]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T11:37:40.967255 #89137]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T11:37:40.967486 #89137]  INFO -- : worker=0 spawning...
+I, [2014-08-10T11:37:40.971346 #89138]  INFO -- : worker=0 spawned pid=89138
+I, [2014-08-10T11:37:40.972401 #89138]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:37:40.979687 #89137]  INFO -- : worker=1 spawning...
+I, [2014-08-10T11:37:40.983491 #89139]  INFO -- : worker=1 spawned pid=89139
+I, [2014-08-10T11:37:40.984453 #89139]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:37:41.107716 #89137]  INFO -- : master process ready
+I, [2014-08-10T11:37:42.506212 #89138]  INFO -- : worker=0 ready
+I, [2014-08-10T11:37:42.588176 #89139]  INFO -- : worker=1 ready
+127.0.0.1 - - [10/Aug/2014 11:37:42] "GET /help/a HTTP/1.1" 200 59 0.3560
+127.0.0.1 - - [10/Aug/2014 11:37:44] "GET /help/b HTTP/1.1" 200 59 0.3394
+I, [2014-08-10T11:40:32.725093 #89137]  INFO -- : reaped #<Process::Status: pid 89139 exit 0> worker=1
+I, [2014-08-10T11:40:32.725377 #89137]  INFO -- : reaped #<Process::Status: pid 89138 exit 0> worker=0
+I, [2014-08-10T11:40:32.725653 #89137]  INFO -- : master complete
+I, [2014-08-10T11:40:34.120291 #89162]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T11:40:34.120603 #89162]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T11:40:34.121630 #89162]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T11:40:34.121775 #89162]  INFO -- : worker=0 spawning...
+I, [2014-08-10T11:40:34.130526 #89163]  INFO -- : worker=0 spawned pid=89163
+I, [2014-08-10T11:40:34.132097 #89163]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:40:34.133294 #89162]  INFO -- : worker=1 spawning...
+I, [2014-08-10T11:40:34.136270 #89164]  INFO -- : worker=1 spawned pid=89164
+I, [2014-08-10T11:40:34.137197 #89164]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:40:34.199908 #89162]  INFO -- : master process ready
+I, [2014-08-10T11:40:35.952402 #89164]  INFO -- : worker=1 ready
+I, [2014-08-10T11:40:36.001698 #89163]  INFO -- : worker=0 ready
+127.0.0.1 - - [10/Aug/2014 11:40:40] "GET /help/b HTTP/1.1" 200 215 0.3497
+127.0.0.1 - - [10/Aug/2014 11:40:43] "GET /help HTTP/1.1" 200 228 0.3930
+I, [2014-08-10T11:43:10.863096 #89162]  INFO -- : reaped #<Process::Status: pid 89164 exit 0> worker=1
+I, [2014-08-10T11:43:10.863359 #89162]  INFO -- : reaped #<Process::Status: pid 89163 exit 0> worker=0
+I, [2014-08-10T11:43:10.863592 #89162]  INFO -- : master complete
+I, [2014-08-10T11:43:12.384690 #89182]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T11:43:12.384948 #89182]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T11:43:12.385956 #89182]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T11:43:12.386100 #89182]  INFO -- : worker=0 spawning...
+I, [2014-08-10T11:43:12.391040 #89182]  INFO -- : worker=1 spawning...
+I, [2014-08-10T11:43:12.390823 #89183]  INFO -- : worker=0 spawned pid=89183
+I, [2014-08-10T11:43:12.391681 #89183]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:43:12.393453 #89184]  INFO -- : worker=1 spawned pid=89184
+I, [2014-08-10T11:43:12.394227 #89184]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:43:12.397705 #89182]  INFO -- : master process ready
+I, [2014-08-10T11:43:13.924938 #89183]  INFO -- : worker=0 ready
+I, [2014-08-10T11:43:13.939010 #89184]  INFO -- : worker=1 ready
+127.0.0.1 - - [10/Aug/2014 11:43:23] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM2fd7165f37a3936c422c3bab0ea609ce&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM2fd7165f37a3936c422c3bab0ea609ce&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=?&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM2fd7165f37a3936c422c3bab0ea609ce&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.1435
+127.0.0.1 - - [10/Aug/2014 11:43:24] "GET /help?ToCountry=US&ToState=CA&SmsMessageSid=SM2fd7165f37a3936c422c3bab0ea609ce&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM2fd7165f37a3936c422c3bab0ea609ce&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=?&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM2fd7165f37a3936c422c3bab0ea609ce&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 228 0.3550
+127.0.0.1 - - [10/Aug/2014 11:43:38] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM6daf381af87fccd38d4c3b939023f9bc&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM6daf381af87fccd38d4c3b939023f9bc&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=B&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM6daf381af87fccd38d4c3b939023f9bc&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0119
+127.0.0.1 - - [10/Aug/2014 11:43:39] "GET /help/?ToCountry=US&ToState=CA&SmsMessageSid=SM6daf381af87fccd38d4c3b939023f9bc&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM6daf381af87fccd38d4c3b939023f9bc&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=B&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM6daf381af87fccd38d4c3b939023f9bc&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 404 482 0.0044
+I, [2014-08-10T11:44:03.777034 #89182]  INFO -- : reaped #<Process::Status: pid 89184 exit 0> worker=1
+I, [2014-08-10T11:44:03.879801 #89182]  INFO -- : reaped #<Process::Status: pid 89183 exit 0> worker=0
+I, [2014-08-10T11:44:03.880053 #89182]  INFO -- : master complete
+I, [2014-08-10T11:44:05.403229 #89198]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T11:44:05.403490 #89198]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T11:44:05.404653 #89198]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T11:44:05.404801 #89198]  INFO -- : worker=0 spawning...
+I, [2014-08-10T11:44:05.408521 #89199]  INFO -- : worker=0 spawned pid=89199
+I, [2014-08-10T11:44:05.409523 #89199]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:44:05.410479 #89198]  INFO -- : worker=1 spawning...
+I, [2014-08-10T11:44:05.413685 #89200]  INFO -- : worker=1 spawned pid=89200
+I, [2014-08-10T11:44:05.414976 #89200]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:44:05.462151 #89198]  INFO -- : master process ready
+I, [2014-08-10T11:44:06.719075 #89200]  INFO -- : worker=1 ready
+I, [2014-08-10T11:44:06.724058 #89199]  INFO -- : worker=0 ready
+I, [2014-08-10T11:44:23.750488 #89198]  INFO -- : reaped #<Process::Status: pid 89200 exit 0> worker=1
+I, [2014-08-10T11:44:23.750782 #89198]  INFO -- : reaped #<Process::Status: pid 89199 exit 0> worker=0
+I, [2014-08-10T11:44:23.752048 #89198]  INFO -- : master complete
+I, [2014-08-10T11:44:25.464820 #89204]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T11:44:25.465073 #89204]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T11:44:25.466146 #89204]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T11:44:25.466287 #89204]  INFO -- : worker=0 spawning...
+I, [2014-08-10T11:44:25.471799 #89204]  INFO -- : worker=1 spawning...
+I, [2014-08-10T11:44:25.471740 #89205]  INFO -- : worker=0 spawned pid=89205
+I, [2014-08-10T11:44:25.472530 #89205]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:44:25.479299 #89206]  INFO -- : worker=1 spawned pid=89206
+I, [2014-08-10T11:44:25.480205 #89206]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:44:25.615598 #89204]  INFO -- : master process ready
+I, [2014-08-10T11:44:27.256801 #89206]  INFO -- : worker=1 ready
+I, [2014-08-10T11:44:27.314762 #89205]  INFO -- : worker=0 ready
+127.0.0.1 - - [10/Aug/2014 11:44:33] "GET /?From=15088866989&Body=A HTTP/1.1" 302 - 0.1151
+127.0.0.1 - - [10/Aug/2014 11:44:34] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM865ea7f8ab30063157878155539f198d&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM865ea7f8ab30063157878155539f198d&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=A&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM865ea7f8ab30063157878155539f198d&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0137
+127.0.0.1 - - [10/Aug/2014 11:44:34] "GET /help/A HTTP/1.1" 200 211 0.5133
+127.0.0.1 - - [10/Aug/2014 11:44:34] "GET /help/A?ToCountry=US&ToState=CA&SmsMessageSid=SM865ea7f8ab30063157878155539f198d&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM865ea7f8ab30063157878155539f198d&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=A&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM865ea7f8ab30063157878155539f198d&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 211 0.4813
+127.0.0.1 - - [10/Aug/2014 11:44:45] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMd9b7bc88d11441b20ebcd2b64ac325b2&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMd9b7bc88d11441b20ebcd2b64ac325b2&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=B&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMd9b7bc88d11441b20ebcd2b64ac325b2&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0632
+127.0.0.1 - - [10/Aug/2014 11:44:45] "GET /help/B?ToCountry=US&ToState=CA&SmsMessageSid=SMd9b7bc88d11441b20ebcd2b64ac325b2&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMd9b7bc88d11441b20ebcd2b64ac325b2&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=B&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMd9b7bc88d11441b20ebcd2b64ac325b2&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 215 0.0115
+127.0.0.1 - - [10/Aug/2014 11:45:02] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMf05dfc042073e3bffe2e4ba7fd69ad81&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMf05dfc042073e3bffe2e4ba7fd69ad81&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=C&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMf05dfc042073e3bffe2e4ba7fd69ad81&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0092
+127.0.0.1 - - [10/Aug/2014 11:45:02] "GET /help/C?ToCountry=US&ToState=CA&SmsMessageSid=SMf05dfc042073e3bffe2e4ba7fd69ad81&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMf05dfc042073e3bffe2e4ba7fd69ad81&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=C&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMf05dfc042073e3bffe2e4ba7fd69ad81&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 212 0.0085
+127.0.0.1 - - [10/Aug/2014 11:45:09] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMd5a3131206cb0b900621a72d5d66e974&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMd5a3131206cb0b900621a72d5d66e974&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=D&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMd5a3131206cb0b900621a72d5d66e974&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0138
+127.0.0.1 - - [10/Aug/2014 11:45:09] "GET /help/D?ToCountry=US&ToState=CA&SmsMessageSid=SMd5a3131206cb0b900621a72d5d66e974&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMd5a3131206cb0b900621a72d5d66e974&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=D&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMd5a3131206cb0b900621a72d5d66e974&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 212 0.0075
+127.0.0.1 - - [10/Aug/2014 11:45:14] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMe971695ed1962976f348d8ff807703e0&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMe971695ed1962976f348d8ff807703e0&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=E&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMe971695ed1962976f348d8ff807703e0&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0184
+127.0.0.1 - - [10/Aug/2014 11:45:15] "GET /help/E?ToCountry=US&ToState=CA&SmsMessageSid=SMe971695ed1962976f348d8ff807703e0&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMe971695ed1962976f348d8ff807703e0&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=E&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMe971695ed1962976f348d8ff807703e0&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 208 0.0082
+127.0.0.1 - - [10/Aug/2014 11:45:22] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMe438bef56a8b6394ad18f25408b08a0b&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMe438bef56a8b6394ad18f25408b08a0b&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Settings&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMe438bef56a8b6394ad18f25408b08a0b&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0104
+127.0.0.1 - - [10/Aug/2014 11:45:22] "GET /settings?ToCountry=US&ToState=CA&SmsMessageSid=SMe438bef56a8b6394ad18f25408b08a0b&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMe438bef56a8b6394ad18f25408b08a0b&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Settings&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMe438bef56a8b6394ad18f25408b08a0b&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 115 0.0082
+127.0.0.1 - - [10/Aug/2014 11:45:26] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM2e255c4316cc6636c262397d066477b0&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM2e255c4316cc6636c262397d066477b0&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Contact&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM2e255c4316cc6636c262397d066477b0&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0124
+127.0.0.1 - - [10/Aug/2014 11:45:27] "GET /contact?ToCountry=US&ToState=CA&SmsMessageSid=SM2e255c4316cc6636c262397d066477b0&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM2e255c4316cc6636c262397d066477b0&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Contact&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM2e255c4316cc6636c262397d066477b0&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 114 0.0091
+I, [2014-08-10T11:45:45.196188 #89204]  INFO -- : reaped #<Process::Status: pid 89206 exit 0> worker=1
+I, [2014-08-10T11:45:45.196782 #89204]  INFO -- : reaped #<Process::Status: pid 89205 exit 0> worker=0
+I, [2014-08-10T11:45:45.197180 #89204]  INFO -- : master complete

@@ -26,9 +26,14 @@ class TextBus < Sinatra::Base
     session[:input] = @input
     session[:user]  = @user
     
-    redirect to ("save/#{$1}") if @input.match /^\s*save\s{1}(\d+)$/i
-    redirect to ("/stops")     if @input.match /^\s*stops\s*$/i
-    redirect to ("/count")     if @input.match /^\s*count\s*$/i
+    redirect to ("/help")       if @input.match /^\s*(h(e|a)lp[\?\!]*|[\?\!]+)\s*$/i
+    redirect to ("/help/#{$1}") if @input.match /^\s*([abcde]{1})\s*$/i
+    redirect to ("save/#{$1}")  if @input.match /^\s*save\s{1}(\d+)$/i
+    redirect to ("/stops")      if @input.match /^\s*stops\s*$/i
+    redirect to ("/count")      if @input.match /^\s*count\s*$/i
+
+    redirect to ("/settings")   if @input.match /^\s*settings\s*$/i
+    redirect to ("/contact")    if @input.match /^\s*contact\s*$/i
     
     # Send request to /address for geocoding and searching
     redirect to("/address?address=#{@input}") if mostly_text(@input)
@@ -38,6 +43,24 @@ class TextBus < Sinatra::Base
 
     redirect to("/stop/#{stop_id}?routes=#{routes}") if routes
     redirect to("/stop/#{stop_id}")
+  end
+
+
+  get '/help' do
+    haml :help_index
+  end
+
+  get '/help/:help_id' do
+    page = params[:help_id]
+    haml :"help/#{page}"
+  end
+
+  get '/settings' do
+    haml "We haven't implemented the settings menu yet. Check back soon."
+  end
+
+  get '/contact' do
+    haml "We haven't implemented the contact page yet. Check back soon."
   end
 
 
