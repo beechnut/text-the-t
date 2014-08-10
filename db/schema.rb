@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140809190538) do
+ActiveRecord::Schema.define(version: 20140810132847) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140809190538) do
     t.string  "language",     default: "English"
     t.boolean "subscribed",   default: false
     t.integer "total_sent",   default: 1
+    t.string  "saved_stops",  default: [],        array: true
   end
 
   add_index "users", ["phone_number"], name: "index_users_on_phone_number", unique: true, using: :btree

@@ -8,4 +8,12 @@ class User < ActiveRecord::Base
                          numericality: { only_integer: true,
                                          greater_than_or_equal:  1     }
 
+  def stops
+    saved_stops
+  end
+
+  def should_receive_help_message?
+    total_sent == 1 || total_sent % 3 == 0
+  end
+
 end
