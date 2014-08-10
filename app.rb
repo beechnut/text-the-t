@@ -52,6 +52,8 @@ class TextBus < Sinatra::Base
       @predictions = @@mbta.flat_complex_predictions(@stop.id, @routes)
     rescue NoMethodError
       redirect to('/no-predictions')
+    ensure
+      puts @predictions
     end
     @time   = Time.now.strftime("%I:%M %P")
 

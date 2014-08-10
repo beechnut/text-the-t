@@ -16,4 +16,8 @@ class User < ActiveRecord::Base
     total_sent == 1 || total_sent % 3 == 0
   end
 
+  def should_receive_tip?
+    total_sent == 1 || total_sent % 5 == 0
+  end
+
 end
