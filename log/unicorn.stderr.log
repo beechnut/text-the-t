@@ -11682,3 +11682,1003 @@ I, [2014-08-10T10:30:18.081950 #88419]  INFO -- : worker=1 ready
 I, [2014-08-10T10:31:39.188204 #88417]  INFO -- : reaped #<Process::Status: pid 88419 exit 0> worker=1
 I, [2014-08-10T10:31:39.188483 #88417]  INFO -- : reaped #<Process::Status: pid 88418 exit 0> worker=0
 I, [2014-08-10T10:31:39.189459 #88417]  INFO -- : master complete
+I, [2014-08-10T10:44:28.070495 #88546]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:44:28.070776 #88546]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:44:28.071917 #88546]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:44:28.072063 #88546]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:44:28.075536 #88547]  INFO -- : worker=0 spawned pid=88547
+I, [2014-08-10T10:44:28.076335 #88547]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:44:28.076839 #88546]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:44:28.080835 #88548]  INFO -- : worker=1 spawned pid=88548
+I, [2014-08-10T10:44:28.082508 #88548]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:44:28.091012 #88546]  INFO -- : master process ready
+I, [2014-08-10T10:44:29.230108 #88547]  INFO -- : worker=0 ready
+I, [2014-08-10T10:44:29.244455 #88548]  INFO -- : worker=1 ready
+127.0.0.1 - - [10/Aug/2014 10:44:29] "GET /?From=15088866989&Body=70006 HTTP/1.1" 302 - 0.1756
+127.0.0.1 - - [10/Aug/2014 10:44:30] "GET /stop/70006?routes= HTTP/1.1" 302 - 1.0166
+127.0.0.1 - - [10/Aug/2014 10:44:30] "GET /no-match HTTP/1.1" 200 34 0.0024
+127.0.0.1 - - [10/Aug/2014 10:44:35] "GET /?From=15088866989&Body=70006 HTTP/1.1" 302 - 0.0110
+127.0.0.1 - - [10/Aug/2014 10:44:35] "GET /stop/70006?routes= HTTP/1.1" 302 - 0.1974
+127.0.0.1 - - [10/Aug/2014 10:44:35] "GET /no-match HTTP/1.1" 200 34 0.0026
+127.0.0.1 - - [10/Aug/2014 10:45:56] "GET /stop/1 HTTP/1.1" 302 - 1.0170
+127.0.0.1 - - [10/Aug/2014 10:45:56] "GET /no-match HTTP/1.1" 200 34 0.0031
+Haml::SyntaxError - Inconsistent indentation: 2 spaces used for indentation, but the rest of the document was indented using 4 spaces.:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:5
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:174:in `block in tabs'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:152:in `instance_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:152:in `tabs'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:751:in `block_opened?'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:122:in `parse'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `new'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `new'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:56:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:46:46] "GET /stop/70080 HTTP/1.1" 500 207587 0.5966
+Haml::SyntaxError - Inconsistent indentation: 2 spaces used for indentation, but the rest of the document was indented using 4 spaces.:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:5
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:174:in `block in tabs'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:152:in `instance_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:152:in `tabs'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:751:in `block_opened?'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:122:in `parse'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `new'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `new'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:56:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:47:13] "GET /stop/70080 HTTP/1.1" 500 207862 0.7793
+I, [2014-08-10T10:47:16.388813 #88546]  INFO -- : reaped #<Process::Status: pid 88548 exit 0> worker=1
+I, [2014-08-10T10:47:16.389365 #88546]  INFO -- : reaped #<Process::Status: pid 88547 exit 0> worker=0
+I, [2014-08-10T10:47:16.389596 #88546]  INFO -- : master complete
+I, [2014-08-10T10:47:18.059418 #88568]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:47:18.059719 #88568]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:47:18.060866 #88568]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:47:18.061017 #88568]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:47:18.067806 #88569]  INFO -- : worker=0 spawned pid=88569
+I, [2014-08-10T10:47:18.068696 #88569]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:47:18.072895 #88568]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:47:18.076602 #88570]  INFO -- : worker=1 spawned pid=88570
+I, [2014-08-10T10:47:18.078793 #88570]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:47:18.219368 #88568]  INFO -- : master process ready
+I, [2014-08-10T10:47:19.782529 #88569]  INFO -- : worker=0 ready
+I, [2014-08-10T10:47:19.806462 #88570]  INFO -- : worker=1 ready
+Haml::SyntaxError - Inconsistent indentation: 2 spaces used for indentation, but the rest of the document was indented using 4 spaces.:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:5
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:174:in `block in tabs'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:152:in `instance_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:152:in `tabs'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:751:in `block_opened?'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/parser.rb:122:in `parse'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `new'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `new'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:57:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:47:20] "GET /stop/70080 HTTP/1.1" 500 207616 0.7527
+127.0.0.1 - - [10/Aug/2014 10:47:43] "GET /stop/70080 HTTP/1.1" 200 88 0.7785
+127.0.0.1 - - [10/Aug/2014 10:48:00] "GET /stop/64000 HTTP/1.1" 200 79 0.3344
+127.0.0.1 - - [10/Aug/2014 10:48:13] "GET /stop/64000 HTTP/1.1" 200 79 0.7550
+I, [2014-08-10T10:48:16.185767 #88568]  INFO -- : reaped #<Process::Status: pid 88570 exit 0> worker=1
+I, [2014-08-10T10:48:16.186420 #88568]  INFO -- : reaped #<Process::Status: pid 88569 exit 0> worker=0
+I, [2014-08-10T10:48:16.186621 #88568]  INFO -- : master complete
+I, [2014-08-10T10:48:17.947252 #88578]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:48:17.947892 #88578]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:48:17.951923 #88578]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:48:17.952107 #88578]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:48:17.954738 #88578]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:48:17.955985 #88579]  INFO -- : worker=0 spawned pid=88579
+I, [2014-08-10T10:48:17.956993 #88579]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:48:17.957882 #88580]  INFO -- : worker=1 spawned pid=88580
+I, [2014-08-10T10:48:17.958794 #88580]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:48:17.968334 #88578]  INFO -- : master process ready
+I, [2014-08-10T10:48:19.290902 #88579]  INFO -- : worker=0 ready
+I, [2014-08-10T10:48:19.305117 #88580]  INFO -- : worker=1 ready
+127.0.0.1 - - [10/Aug/2014 10:48:20] "GET /stop/64000 HTTP/1.1" 200 79 0.7688
+127.0.0.1 - - [10/Aug/2014 10:48:24] "GET /stop/64000 HTTP/1.1" 200 79 0.6502
+127.0.0.1 - - [10/Aug/2014 10:48:54] "GET /?From=15088866989&Body=70006 HTTP/1.1" 302 - 0.0739
+NoMethodError - undefined method `each' for nil:NilClass:
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/mbta-realtime-0.1.4/lib/mbta-realtime/client.rb:90:in `predictions_by_stop_and_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/mbta-realtime-0.1.4/lib/mbta-realtime/client.rb:100:in `flat_complex_predictions'
+	/Users/matt/Documents/repos/textbus/app.rb:49:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:48:54] "GET /stop/70006?routes= HTTP/1.1" 500 181997 0.4874
+127.0.0.1 - - [10/Aug/2014 10:49:19] "GET /stop/64000?routes= HTTP/1.1" 200 79 0.3113
+127.0.0.1 - - [10/Aug/2014 10:49:42] "GET /stop/64000?routes= HTTP/1.1" 200 149 0.4377
+127.0.0.1 - - [10/Aug/2014 10:50:01] "GET /stop/64000?routes= HTTP/1.1" 200 149 0.3505
+127.0.0.1 - - [10/Aug/2014 10:50:04] "GET /stop/64000?routes= HTTP/1.1" 200 149 0.4511
+127.0.0.1 - - [10/Aug/2014 10:50:06] "GET /stop/64000 HTTP/1.1" 200 147 0.3315
+127.0.0.1 - - [10/Aug/2014 10:50:51] "GET /stop/64000 HTTP/1.1" 200 79 0.3553
+I, [2014-08-10T10:51:02.835033 #88578]  INFO -- : reaped #<Process::Status: pid 88580 exit 0> worker=1
+I, [2014-08-10T10:51:02.835377 #88578]  INFO -- : reaped #<Process::Status: pid 88579 exit 0> worker=0
+I, [2014-08-10T10:51:02.835663 #88578]  INFO -- : master complete
+I, [2014-08-10T10:53:10.877329 #88618]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:53:10.877610 #88618]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:53:10.878704 #88618]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:53:10.878855 #88618]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:53:10.883827 #88619]  INFO -- : worker=0 spawned pid=88619
+I, [2014-08-10T10:53:10.885132 #88619]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:53:10.885852 #88618]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:53:10.889080 #88620]  INFO -- : worker=1 spawned pid=88620
+I, [2014-08-10T10:53:10.890064 #88620]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:53:10.908030 #88618]  INFO -- : master process ready
+I, [2014-08-10T10:53:12.682891 #88619]  INFO -- : worker=0 ready
+I, [2014-08-10T10:53:12.711079 #88620]  INFO -- : worker=1 ready
+127.0.0.1 - - [10/Aug/2014 10:53:14] "GET /stop/64000 HTTP/1.1" 200 103 0.8617
+I, [2014-08-10T10:53:26.674371 #88618]  INFO -- : reaped #<Process::Status: pid 88620 exit 0> worker=1
+I, [2014-08-10T10:53:26.674719 #88618]  INFO -- : reaped #<Process::Status: pid 88619 exit 0> worker=0
+I, [2014-08-10T10:53:26.675221 #88618]  INFO -- : master complete
+I, [2014-08-10T10:53:28.335450 #88624]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:53:28.335731 #88624]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:53:28.336864 #88624]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:53:28.337002 #88624]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:53:28.341407 #88624]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:53:28.341906 #88625]  INFO -- : worker=0 spawned pid=88625
+I, [2014-08-10T10:53:28.342770 #88625]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:53:28.342798 #88624]  INFO -- : master process ready
+I, [2014-08-10T10:53:28.346180 #88626]  INFO -- : worker=1 spawned pid=88626
+I, [2014-08-10T10:53:28.347668 #88626]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:53:29.990566 #88626]  INFO -- : worker=1 ready
+I, [2014-08-10T10:53:30.038435 #88625]  INFO -- : worker=0 ready
+NoMethodError - undefined method `split' for nil:NilClass:
+	/Users/matt/Documents/repos/textbus/app.rb:47:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:53:30] "GET /stop/64000 HTTP/1.1" 500 166771 0.3250
+I, [2014-08-10T10:54:03.788886 #88624]  INFO -- : reaped #<Process::Status: pid 88626 exit 0> worker=1
+I, [2014-08-10T10:54:03.789029 #88624]  INFO -- : reaped #<Process::Status: pid 88625 exit 0> worker=0
+I, [2014-08-10T10:54:03.789520 #88624]  INFO -- : master complete
+I, [2014-08-10T10:54:05.582820 #88632]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:54:05.583074 #88632]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:54:05.584165 #88632]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:54:05.584309 #88632]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:54:05.588131 #88633]  INFO -- : worker=0 spawned pid=88633
+I, [2014-08-10T10:54:05.589028 #88633]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:54:05.589916 #88632]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:54:05.593409 #88634]  INFO -- : worker=1 spawned pid=88634
+I, [2014-08-10T10:54:05.594310 #88634]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:54:05.607883 #88632]  INFO -- : master process ready
+I, [2014-08-10T10:54:06.756142 #88633]  INFO -- : worker=0 ready
+I, [2014-08-10T10:54:06.756321 #88634]  INFO -- : worker=1 ready
+127.0.0.1 - - [10/Aug/2014 10:54:08] "GET /stop/64000 HTTP/1.1" 200 275 0.6706
+127.0.0.1 - - [10/Aug/2014 10:54:16] "GET /stop/64000 HTTP/1.1" 200 161 0.6236
+127.0.0.1 - - [10/Aug/2014 10:54:21] "GET /stop/64000 HTTP/1.1" 200 161 0.3084
+127.0.0.1 - - [10/Aug/2014 10:54:24] "GET /stop/64000 HTTP/1.1" 200 161 0.2928
+127.0.0.1 - - [10/Aug/2014 10:54:25] "GET /stop/64000 HTTP/1.1" 200 161 0.2908
+127.0.0.1 - - [10/Aug/2014 10:54:27] "GET /stop/64000 HTTP/1.1" 200 161 0.3171
+NoMethodError - undefined method `should_receive_help?' for nil:NilClass:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:4:in `block in singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `instance_eval'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-10:in `__tilt_2156059640'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:56:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:54:35] "GET /stop/64000 HTTP/1.1" 500 192899 0.3982
+I, [2014-08-10T10:55:00.142811 #88632]  INFO -- : reaped #<Process::Status: pid 88634 exit 0> worker=1
+I, [2014-08-10T10:55:00.143953 #88632]  INFO -- : reaped #<Process::Status: pid 88633 exit 0> worker=0
+I, [2014-08-10T10:55:00.144765 #88632]  INFO -- : master complete
+I, [2014-08-10T10:55:01.946246 #88641]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:55:01.946500 #88641]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:55:01.947590 #88641]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:55:01.947732 #88641]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:55:01.951574 #88642]  INFO -- : worker=0 spawned pid=88642
+I, [2014-08-10T10:55:01.952832 #88642]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:55:01.953044 #88641]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:55:01.955662 #88643]  INFO -- : worker=1 spawned pid=88643
+I, [2014-08-10T10:55:01.956726 #88643]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:55:01.966107 #88641]  INFO -- : master process ready
+I, [2014-08-10T10:55:03.282661 #88642]  INFO -- : worker=0 ready
+I, [2014-08-10T10:55:03.341098 #88643]  INFO -- : worker=1 ready
+NoMethodError - undefined method `should_receive_help?' for nil:NilClass:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:4:in `block in singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `instance_eval'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-10:in `__tilt_2156059640'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:57:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:55:04] "GET /stop/64000 HTTP/1.1" 500 192860 1.0436
+NoMethodError - undefined method `should_receive_help?' for nil:NilClass:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:4:in `block in singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `instance_eval'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-10:in `__tilt_2156059640'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:57:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:55:06] "GET /stop/64000 HTTP/1.1" 500 192860 0.7267
+I, [2014-08-10T10:55:18.458395 #88641]  INFO -- : reaped #<Process::Status: pid 88643 exit 0> worker=1
+I, [2014-08-10T10:55:18.458667 #88641]  INFO -- : reaped #<Process::Status: pid 88642 exit 0> worker=0
+I, [2014-08-10T10:55:18.460074 #88641]  INFO -- : master complete
+I, [2014-08-10T10:55:20.084374 #88647]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:55:20.084659 #88647]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:55:20.085824 #88647]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:55:20.085966 #88647]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:55:20.090078 #88648]  INFO -- : worker=0 spawned pid=88648
+I, [2014-08-10T10:55:20.091053 #88648]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:55:20.091700 #88647]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:55:20.098532 #88647]  INFO -- : master process ready
+I, [2014-08-10T10:55:20.097896 #88649]  INFO -- : worker=1 spawned pid=88649
+I, [2014-08-10T10:55:20.099753 #88649]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:55:21.832486 #88649]  INFO -- : worker=1 ready
+I, [2014-08-10T10:55:21.884748 #88648]  INFO -- : worker=0 ready
+NoMethodError - undefined method `name' for nil:NilClass:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:5:in `block in singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `instance_eval'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-10:in `__tilt_2156059640'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:57:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:55:22] "GET /stop/64000 HTTP/1.1" 500 192828 0.8678
+NoMethodError - undefined method `name' for nil:NilClass:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:7:in `block in singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `instance_eval'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-10:in `__tilt_2156059640'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:57:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 10:55:45] "GET /stop/64000 HTTP/1.1" 500 193406 0.8784
+127.0.0.1 - - [10/Aug/2014 10:55:50] "GET /stop/64000 HTTP/1.1" 200 810 0.3025
+127.0.0.1 - - [10/Aug/2014 10:55:56] "GET /stop/64000 HTTP/1.1" 200 810 0.3967
+127.0.0.1 - - [10/Aug/2014 10:55:59] "GET /stop/64000 HTTP/1.1" 200 810 0.3054
+127.0.0.1 - - [10/Aug/2014 10:56:01] "GET /stop/64000 HTTP/1.1" 200 810 0.3485
+127.0.0.1 - - [10/Aug/2014 10:56:01] "GET /favicon.ico HTTP/1.1" 404 484 0.0029
+127.0.0.1 - - [10/Aug/2014 10:56:32] "GET /stop/64000 HTTP/1.1" 200 765 0.3416
+127.0.0.1 - - [10/Aug/2014 10:56:37] "GET /stop/70080 HTTP/1.1" 200 422 0.2342
+I, [2014-08-10T10:57:05.382351 #88647]  INFO -- : reaped #<Process::Status: pid 88649 exit 0> worker=1
+I, [2014-08-10T10:57:05.382491 #88647]  INFO -- : reaped #<Process::Status: pid 88648 exit 0> worker=0
+I, [2014-08-10T10:57:05.382788 #88647]  INFO -- : master complete
+I, [2014-08-10T10:57:07.145227 #88664]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T10:57:07.145501 #88664]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T10:57:07.152750 #88664]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T10:57:07.153141 #88664]  INFO -- : worker=0 spawning...
+I, [2014-08-10T10:57:07.160779 #88665]  INFO -- : worker=0 spawned pid=88665
+I, [2014-08-10T10:57:07.162525 #88665]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:57:07.173308 #88664]  INFO -- : worker=1 spawning...
+I, [2014-08-10T10:57:07.174641 #88664]  INFO -- : master process ready
+I, [2014-08-10T10:57:07.176815 #88666]  INFO -- : worker=1 spawned pid=88666
+I, [2014-08-10T10:57:07.178047 #88666]  INFO -- : Refreshing Gem list
+I, [2014-08-10T10:57:08.566691 #88666]  INFO -- : worker=1 ready
+I, [2014-08-10T10:57:08.604507 #88665]  INFO -- : worker=0 ready
+127.0.0.1 - - [10/Aug/2014 10:57:09] "GET /stop/70080 HTTP/1.1" 200 422 0.6459
+127.0.0.1 - - [10/Aug/2014 10:57:14] "GET /stop/70080 HTTP/1.1" 200 152 0.6742
+127.0.0.1 - - [10/Aug/2014 10:57:16] "GET /stop/70080 HTTP/1.1" 200 152 0.2062
+127.0.0.1 - - [10/Aug/2014 10:57:27] "GET /stop/70080 HTTP/1.1" 200 152 0.2039
+127.0.0.1 - - [10/Aug/2014 10:57:30] "GET /stop/70080 HTTP/1.1" 200 152 0.2101
+127.0.0.1 - - [10/Aug/2014 10:57:31] "GET /stop/70080 HTTP/1.1" 200 152 0.2148
+127.0.0.1 - - [10/Aug/2014 10:57:32] "GET /stop/70080 HTTP/1.1" 200 152 0.2071
+127.0.0.1 - - [10/Aug/2014 10:57:41] "GET /?From=15088866989&Body=70080 HTTP/1.1" 302 - 0.0346
+127.0.0.1 - - [10/Aug/2014 10:57:42] "GET /stop/70080?routes= HTTP/1.1" 200 152 0.2157
+127.0.0.1 - - [10/Aug/2014 10:57:45] "GET /?From=15088866989&Body=70080 HTTP/1.1" 302 - 0.0086
+127.0.0.1 - - [10/Aug/2014 10:57:45] "GET /stop/70080?routes= HTTP/1.1" 200 152 0.2054
+127.0.0.1 - - [10/Aug/2014 10:57:47] "GET /?From=15088866989&Body=70080 HTTP/1.1" 302 - 0.0280
+127.0.0.1 - - [10/Aug/2014 10:57:47] "GET /stop/70080?routes= HTTP/1.1" 200 152 0.2335
+127.0.0.1 - - [10/Aug/2014 10:57:49] "GET /?From=15088866989&Body=70080 HTTP/1.1" 302 - 0.0070
+127.0.0.1 - - [10/Aug/2014 10:57:49] "GET /stop/70080?routes= HTTP/1.1" 200 152 0.2176
+127.0.0.1 - - [10/Aug/2014 11:02:39] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM5aed6aef0ab3756e6de3bf16c5d75391&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM5aed6aef0ab3756e6de3bf16c5d75391&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM5aed6aef0ab3756e6de3bf16c5d75391&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0127
+127.0.0.1 - - [10/Aug/2014 11:02:40] "GET /stop/64000?ToCountry=US&ToState=CA&SmsMessageSid=SM5aed6aef0ab3756e6de3bf16c5d75391&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM5aed6aef0ab3756e6de3bf16c5d75391&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM5aed6aef0ab3756e6de3bf16c5d75391&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01&routes= HTTP/1.1" 200 165 0.3104
+127.0.0.1 - - [10/Aug/2014 11:02:56] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMf4ffc1e78577fe9f8a010bfc286a3729&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMf4ffc1e78577fe9f8a010bfc286a3729&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000+28&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMf4ffc1e78577fe9f8a010bfc286a3729&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0250
+127.0.0.1 - - [10/Aug/2014 11:02:57] "GET /stop/64000?ToCountry=US&ToState=CA&SmsMessageSid=SMf4ffc1e78577fe9f8a010bfc286a3729&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMf4ffc1e78577fe9f8a010bfc286a3729&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000+28&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMf4ffc1e78577fe9f8a010bfc286a3729&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01&routes=28 HTTP/1.1" 200 95 0.3792
+127.0.0.1 - - [10/Aug/2014 11:03:09] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMa1926e4050c1061617281f71cedb0aae&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMa1926e4050c1061617281f71cedb0aae&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000+41+44&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMa1926e4050c1061617281f71cedb0aae&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0126
+127.0.0.1 - - [10/Aug/2014 11:03:09] "GET /stop/64000?ToCountry=US&ToState=CA&SmsMessageSid=SMa1926e4050c1061617281f71cedb0aae&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMa1926e4050c1061617281f71cedb0aae&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000+41+44&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMa1926e4050c1061617281f71cedb0aae&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01&routes=41,44 HTTP/1.1" 200 125 0.3754
+127.0.0.1 - - [10/Aug/2014 11:04:13] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM05abcf26e4f1914c8accd23173065250&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM05abcf26e4f1914c8accd23173065250&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM05abcf26e4f1914c8accd23173065250&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0131
+127.0.0.1 - - [10/Aug/2014 11:04:14] "GET /save/64000?ToCountry=US&ToState=CA&SmsMessageSid=SM05abcf26e4f1914c8accd23173065250&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM05abcf26e4f1914c8accd23173065250&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM05abcf26e4f1914c8accd23173065250&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 144 0.1965
+127.0.0.1 - - [10/Aug/2014 11:04:19] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM0e36decaede534d6b60a71ce834ee321&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM0e36decaede534d6b60a71ce834ee321&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Stops&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM0e36decaede534d6b60a71ce834ee321&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0106
+127.0.0.1 - - [10/Aug/2014 11:04:20] "GET /stops?ToCountry=US&ToState=CA&SmsMessageSid=SM0e36decaede534d6b60a71ce834ee321&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM0e36decaede534d6b60a71ce834ee321&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Stops&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM0e36decaede534d6b60a71ce834ee321&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 127 0.3516
+127.0.0.1 - - [10/Aug/2014 11:12:28] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMc6199ca7c5490608f61a217cd12fefe1&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMc6199ca7c5490608f61a217cd12fefe1&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMc6199ca7c5490608f61a217cd12fefe1&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0114
+NoMethodError - undefined method `name' for nil:NilClass:
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:5:in `block in singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `instance_eval'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-8:in `singleton class'
+	/Users/matt/Documents/repos/textbus/views/predictions/all.haml:-10:in `__tilt_2156059640'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/Users/matt/Documents/repos/textbus/app.rb:58:in `block in <class:TextBus>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/nulllogger.rb:9:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `load'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/unicorn:23:in `<main>'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `eval'
+	/Users/matt/.rvm/gems/ruby-2.1.1@textbus/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [10/Aug/2014 11:12:29] "GET /stop/64000?ToCountry=US&ToState=CA&SmsMessageSid=SMc6199ca7c5490608f61a217cd12fefe1&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMc6199ca7c5490608f61a217cd12fefe1&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMc6199ca7c5490608f61a217cd12fefe1&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01&routes= HTTP/1.1" 500 208920 0.4654
+127.0.0.1 - - [10/Aug/2014 11:13:03] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM130dfb85d4cca2cad664efc1f0b44e65&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM130dfb85d4cca2cad664efc1f0b44e65&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000+41&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM130dfb85d4cca2cad664efc1f0b44e65&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0134
+127.0.0.1 - - [10/Aug/2014 11:13:04] "GET /stop/64000?ToCountry=US&ToState=CA&SmsMessageSid=SM130dfb85d4cca2cad664efc1f0b44e65&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM130dfb85d4cca2cad664efc1f0b44e65&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000+41&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM130dfb85d4cca2cad664efc1f0b44e65&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01&routes=41 HTTP/1.1" 200 79 0.4153
+127.0.0.1 - - [10/Aug/2014 11:14:14] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM0382cd00c2d99007faa57c89f36387f9&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM0382cd00c2d99007faa57c89f36387f9&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM0382cd00c2d99007faa57c89f36387f9&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0098
+127.0.0.1 - - [10/Aug/2014 11:14:15] "GET /stop/64000?ToCountry=US&ToState=CA&SmsMessageSid=SM0382cd00c2d99007faa57c89f36387f9&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM0382cd00c2d99007faa57c89f36387f9&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM0382cd00c2d99007faa57c89f36387f9&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01&routes= HTTP/1.1" 200 149 0.3006
+127.0.0.1 - - [10/Aug/2014 11:15:02] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM127927b0b09c3f96f0d308a7495d3b05&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM127927b0b09c3f96f0d308a7495d3b05&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000+66&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM127927b0b09c3f96f0d308a7495d3b05&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0134
+127.0.0.1 - - [10/Aug/2014 11:15:02] "GET /stop/64000?ToCountry=US&ToState=CA&SmsMessageSid=SM127927b0b09c3f96f0d308a7495d3b05&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM127927b0b09c3f96f0d308a7495d3b05&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=64000+66&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM127927b0b09c3f96f0d308a7495d3b05&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01&routes=66 HTTP/1.1" 200 116 0.3060
+127.0.0.1 - - [10/Aug/2014 11:15:58] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM59ac04cb8916b812c9e5cbdef941982f&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM59ac04cb8916b812c9e5cbdef941982f&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM59ac04cb8916b812c9e5cbdef941982f&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0122
+127.0.0.1 - - [10/Aug/2014 11:15:58] "GET /save/64000?ToCountry=US&ToState=CA&SmsMessageSid=SM59ac04cb8916b812c9e5cbdef941982f&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM59ac04cb8916b812c9e5cbdef941982f&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+64000&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM59ac04cb8916b812c9e5cbdef941982f&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 144 0.1860
+127.0.0.1 - - [10/Aug/2014 11:16:17] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMc64ce18d03940fdde5bc18c6a4413a46&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMc64ce18d03940fdde5bc18c6a4413a46&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Stops&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMc64ce18d03940fdde5bc18c6a4413a46&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0108
+127.0.0.1 - - [10/Aug/2014 11:16:18] "GET /stops?ToCountry=US&ToState=CA&SmsMessageSid=SMc64ce18d03940fdde5bc18c6a4413a46&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMc64ce18d03940fdde5bc18c6a4413a46&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Stops&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMc64ce18d03940fdde5bc18c6a4413a46&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 154 0.6170
+127.0.0.1 - - [10/Aug/2014 11:21:15] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM69c73c8b52a764583bd6bd90251c6a16&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM69c73c8b52a764583bd6bd90251c6a16&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+1&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM69c73c8b52a764583bd6bd90251c6a16&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0112
+127.0.0.1 - - [10/Aug/2014 11:21:16] "GET /save/1?ToCountry=US&ToState=CA&SmsMessageSid=SM69c73c8b52a764583bd6bd90251c6a16&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM69c73c8b52a764583bd6bd90251c6a16&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+1&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM69c73c8b52a764583bd6bd90251c6a16&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 174 0.6088
+127.0.0.1 - - [10/Aug/2014 11:21:38] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMb84056545948b8976d975b29d5470849&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMb84056545948b8976d975b29d5470849&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Stops&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMb84056545948b8976d975b29d5470849&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0119
+127.0.0.1 - - [10/Aug/2014 11:21:39] "GET /stops?ToCountry=US&ToState=CA&SmsMessageSid=SMb84056545948b8976d975b29d5470849&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMb84056545948b8976d975b29d5470849&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Stops&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMb84056545948b8976d975b29d5470849&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 191 0.6187
+I, [2014-08-10T11:21:46.956359 #88664]  INFO -- : reaped #<Process::Status: pid 88666 exit 0> worker=1
+I, [2014-08-10T11:21:46.956504 #88664]  INFO -- : reaped #<Process::Status: pid 88665 exit 0> worker=0
+I, [2014-08-10T11:21:46.956632 #88664]  INFO -- : master complete
+I, [2014-08-10T11:22:57.574400 #88863]  INFO -- : unlinking existing socket=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock
+I, [2014-08-10T11:22:57.574681 #88863]  INFO -- : listening on addr=/Users/matt/Documents/repos/textbus/tmp/sockets/unicorn.sock fd=9
+I, [2014-08-10T11:22:57.575861 #88863]  INFO -- : listening on addr=0.0.0.0:3000 fd=10
+I, [2014-08-10T11:22:57.576002 #88863]  INFO -- : worker=0 spawning...
+I, [2014-08-10T11:22:57.578842 #88863]  INFO -- : worker=1 spawning...
+I, [2014-08-10T11:22:57.580014 #88864]  INFO -- : worker=0 spawned pid=88864
+I, [2014-08-10T11:22:57.581032 #88864]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:22:57.581118 #88865]  INFO -- : worker=1 spawned pid=88865
+I, [2014-08-10T11:22:57.581891 #88865]  INFO -- : Refreshing Gem list
+I, [2014-08-10T11:22:57.593670 #88863]  INFO -- : master process ready
+I, [2014-08-10T11:22:58.771347 #88864]  INFO -- : worker=0 ready
+I, [2014-08-10T11:22:58.817345 #88865]  INFO -- : worker=1 ready
+127.0.0.1 - - [10/Aug/2014 11:23:00] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SMb2b1adf915c9c5299c61b53cf8ee1339&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMb2b1adf915c9c5299c61b53cf8ee1339&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+1&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMb2b1adf915c9c5299c61b53cf8ee1339&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.1075
+127.0.0.1 - - [10/Aug/2014 11:23:00] "GET /save/1?ToCountry=US&ToState=CA&SmsMessageSid=SMb2b1adf915c9c5299c61b53cf8ee1339&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SMb2b1adf915c9c5299c61b53cf8ee1339&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+1&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SMb2b1adf915c9c5299c61b53cf8ee1339&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 154 0.5535
+127.0.0.1 - - [10/Aug/2014 11:23:16] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM34cbff5ed495b887cc3eb8d1e1ebc1d9&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM34cbff5ed495b887cc3eb8d1e1ebc1d9&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+1&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM34cbff5ed495b887cc3eb8d1e1ebc1d9&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0109
+127.0.0.1 - - [10/Aug/2014 11:23:17] "GET /save/1?ToCountry=US&ToState=CA&SmsMessageSid=SM34cbff5ed495b887cc3eb8d1e1ebc1d9&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM34cbff5ed495b887cc3eb8d1e1ebc1d9&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Save+1&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM34cbff5ed495b887cc3eb8d1e1ebc1d9&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 174 0.4150
+127.0.0.1 - - [10/Aug/2014 11:23:28] "GET /?ToCountry=US&ToState=CA&SmsMessageSid=SM797fb9e3cf6420d846e6d76c3b34294b&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM797fb9e3cf6420d846e6d76c3b34294b&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Stops&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM797fb9e3cf6420d846e6d76c3b34294b&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 302 - 0.0213
+127.0.0.1 - - [10/Aug/2014 11:23:28] "GET /stops?ToCountry=US&ToState=CA&SmsMessageSid=SM797fb9e3cf6420d846e6d76c3b34294b&NumMedia=0&ToCity=&FromZip=01609&SmsSid=SM797fb9e3cf6420d846e6d76c3b34294b&FromState=MA&SmsStatus=received&FromCity=WORCESTER&Body=Stops&FromCountry=US&To=%2B16194583982&ToZip=&MessageSid=SM797fb9e3cf6420d846e6d76c3b34294b&AccountSid=ACd9dfcfcf8f400e0f30050a1a29a5f21f&From=%2B15087692973&ApiVersion=2010-04-01 HTTP/1.1" 200 110 0.1091
+I, [2014-08-10T11:23:36.917516 #88863]  INFO -- : reaped #<Process::Status: pid 88865 exit 0> worker=1
+I, [2014-08-10T11:23:36.917657 #88863]  INFO -- : reaped #<Process::Status: pid 88864 exit 0> worker=0
+I, [2014-08-10T11:23:36.917813 #88863]  INFO -- : master complete

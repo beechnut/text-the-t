@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
     saved_stops
   end
 
-  def should_receive_help_message?
+  def should_receive_help?
     total_sent == 1 || total_sent % 3 == 0
   end
 

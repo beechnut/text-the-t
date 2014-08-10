@@ -1,3 +1,5 @@
 Stop #{@stop.id}: #{@stop.name}
 - @predictions.each do |route|
     #{route.name}: #{route.trips.collect{|t| "#{t.time.to_i/60}m"}.join(', ')}
+- if @predictions.count > 2 && @user.should_receive_help?
+    TIP: Enter "#{@stop.id} #{@predictions.first.route.name} to get times for just the #{@predictions.first.route.name} bus!"

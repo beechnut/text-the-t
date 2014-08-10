@@ -1,3 +1,4 @@
+
 require 'dotenv'
 require 'sinatra'
 require 'sinatra/activerecord'
@@ -44,16 +45,22 @@ class TextBus < Sinatra::Base
     stop_id = params[:stop_id]
     @stop   = OpenStruct.new({id:   stop_id,
                               name: @@mbta.stop_name(stop_id)})
-    @routes = Array(params[:routes]).split(',')
+    @routes = params[:routes] ? params[:routes].split(',') : []
+    @user   = session[:user] || User.first
 
     begin
       @predictions = @@mbta.flat_complex_predictions(@stop.id, @routes)
     rescue NoMethodError
-      redirect to("/no-match")
+      redirect to('/no-predictions')
     end
     @time   = Time.now.strftime("%I:%M %P")
 
     haml :"predictions/all"
+  end
+
+
+  get "/no-predictions" do
+    haml "Sorry, there are no predictions available for that stop and/or route presently."
   end
 
 
@@ -87,11 +94,12 @@ class TextBus < Sinatra::Base
     @stop = OpenStruct.new({id:   params[:stop_id],
                             name: @@mbta.stop_name(params[:stop_id]) })
 
-    @user.saved_stops = @user.saved_stops + [ @stop.id ]
+    saved_stops = @user.saved_stops + [ @stop.id ]
+    @user.saved_stops = saved_stops.uniq
     if @user.save
       haml :save_success
     else
-      redirct to('/no-match')
+      redirect to('/no-match')
     end
   end
 

@@ -2,5 +2,5 @@
 %Response
   %Message
     =yield
-    - if @user && @user.should_receive_help_message?
+    - if @user && @user.should_receive_help?
       Text ? for help
