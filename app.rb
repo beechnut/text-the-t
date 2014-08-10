@@ -79,7 +79,7 @@ class TextBus < Sinatra::Base
     @stop   = OpenStruct.new({id:   stop_id,
                               name: @@mbta.stop_name(stop_id)})
     @routes = params[:routes] ? params[:routes].split(',') : []
-    @user   = session[:user] || User.first
+    @user   = session[:user] || User.find("+15087692973")
 
     begin
       @predictions = @@mbta.flat_complex_predictions(@stop.id, @routes)
@@ -99,7 +99,7 @@ class TextBus < Sinatra::Base
   end
 
   get "/stops" do
-    @user  = session[:user] || User.first
+    @user  = session[:user] || User.find("+15087692973")
     @stops = @user.saved_stops
 
     if @stops.empty?
@@ -112,7 +112,7 @@ class TextBus < Sinatra::Base
 
 
   get "/save/:stop_id" do
-    @user = session[:user] || User.first
+    @user = session[:user] || User.find("+15087692973")
     @stop = OpenStruct.new({id:   params[:stop_id],
                             name: @@mbta.stop_name(params[:stop_id]) })
 
@@ -127,7 +127,7 @@ class TextBus < Sinatra::Base
 
 
   get "/remove/:stop_id" do
-    @user = session[:user] || User.first
+    @user = session[:user] || User.find("+15087692973")
     @stop = OpenStruct.new({id:   params[:stop_id],
                             name: @@mbta.stop_name(params[:stop_id]) })
 
@@ -142,7 +142,7 @@ class TextBus < Sinatra::Base
 
 
   get "/count" do
-    @user = session[:user] || User.first
+    @user = session[:user] || User.find("+15087692973")
     haml "You have sent #{@user.total_sent} messages to TextBus."
   end
 

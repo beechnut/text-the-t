@@ -4,5 +4,5 @@
     =yield
     - if @user && @user.should_receive_help?
       Text ? for help
-    - if @user && @user.total_sent == 1
+    - if @user && @user.total_sent < 3
       Welcome to TextBus! TextBus lets you use text messages to get real-time bus arrival times. Text ? for more info.
