@@ -1,0 +1,96 @@
+{
+    "stop_id": "634",
+    "stop_name": "Washington St @ Albano St",
+    "mode": [
+        {
+            "route_type": "3",
+            "mode_name": "Bus",
+            "route": [
+                {
+                    "route_id": "34",
+                    "route_name": "34",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23594476",
+                                    "trip_name": "2:00 pm from 272 Washington St to Forest Hills Station Upper Busway",
+                                    "sch_arr_dt": "1407607920",
+                                    "sch_dep_dt": "1407607920"
+                                },
+                                {
+                                    "trip_id": "23594482",
+                                    "trip_name": "1:25 pm from 272 Washington St to Forest Hills Station Upper Busway",
+                                    "sch_arr_dt": "1407605820",
+                                    "sch_dep_dt": "1407605820"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "route_id": "34E",
+                    "route_name": "34E",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23594486",
+                                    "trip_name": "1:05 pm from Walpole Station Elm St Lot to Forest Hills Station Upper Busway",
+                                    "sch_arr_dt": "1407607740",
+                                    "sch_dep_dt": "1407607740"
+                                },
+                                {
+                                    "trip_id": "23594488",
+                                    "trip_name": "12:30 pm from Walpole Station Elm St Lot to Forest Hills Station Upper Busway",
+                                    "sch_arr_dt": "1407605640",
+                                    "sch_dep_dt": "1407605640"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "route_id": "40",
+                    "route_name": "40",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23593791",
+                                    "trip_name": "1:30 pm from 84 Georgetown Pl to Forest Hills Station Upper Busway",
+                                    "sch_arr_dt": "1407606360",
+                                    "sch_dep_dt": "1407606360"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "route_id": "50",
+                    "route_name": "50",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23593850",
+                                    "trip_name": "1:50 pm from Hyde Park Ave @ Oak Street to Forest Hills Station Upper Busway",
+                                    "sch_arr_dt": "1407607260",
+                                    "sch_dep_dt": "1407607260"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

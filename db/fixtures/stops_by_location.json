@@ -1,0 +1,139 @@
+{
+    "stop": [
+        {
+            "stop_id": "70159",
+            "stop_name": "Boylston Station - Outbound",
+            "parent_station": "place-boyls",
+            "parent_station_name": "Boylston Station",
+            "stop_lat": "42.35302",
+            "stop_lon": "-71.06459",
+            "distance": "0.00800655130296946"
+        },
+        {
+            "stop_id": "70158",
+            "stop_name": "Boylston Station - Inbound",
+            "parent_station": "place-boyls",
+            "parent_station_name": "Boylston Station",
+            "stop_lat": "42.35302",
+            "stop_lon": "-71.06459",
+            "distance": "0.00800655130296946"
+        },
+        {
+            "stop_id": "place-boyls",
+            "stop_name": "Boylston Station",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.35302",
+            "stop_lon": "-71.06459",
+            "distance": "0.00800655130296946"
+        },
+        {
+            "stop_id": "8279",
+            "stop_name": "Tremont St opp Avery St",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.353249",
+            "stop_lon": "-71.064354",
+            "distance": "0.0277116596698761"
+        },
+        {
+            "stop_id": "place-chncl",
+            "stop_name": "Chinatown Station",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.352547",
+            "stop_lon": "-71.062752",
+            "distance": "0.100191049277782"
+        },
+        {
+            "stop_id": "70019",
+            "stop_name": "Chinatown Station - Inbound",
+            "parent_station": "place-chncl",
+            "parent_station_name": "Chinatown Station",
+            "stop_lat": "42.352547",
+            "stop_lon": "-71.062752",
+            "distance": "0.100191049277782"
+        },
+        {
+            "stop_id": "70018",
+            "stop_name": "Chinatown Station - Outbound",
+            "parent_station": "place-chncl",
+            "parent_station_name": "Chinatown Station",
+            "stop_lat": "42.352547",
+            "stop_lon": "-71.062752",
+            "distance": "0.100191049277782"
+        },
+        {
+            "stop_id": "6567",
+            "stop_name": "Washington St @ Essex St",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.352463",
+            "stop_lon": "-71.062553",
+            "distance": "0.11149089038372"
+        },
+        {
+            "stop_id": "6537",
+            "stop_name": "Washington St @ Essex St",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.352287",
+            "stop_lon": "-71.062584",
+            "distance": "0.114014588296413"
+        },
+        {
+            "stop_id": "91856",
+            "stop_name": "Stuart St @ Tremont St",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.351135",
+            "stop_lon": "-71.064766",
+            "distance": "0.122894078493118"
+        },
+        {
+            "stop_id": "1241",
+            "stop_name": "Charles St S @ Park Plaza",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.351749",
+            "stop_lon": "-71.067101",
+            "distance": "0.148577779531479"
+        },
+        {
+            "stop_id": "6545",
+            "stop_name": "Washington St @ Kneeland St",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.350822",
+            "stop_lon": "-71.063019",
+            "distance": "0.166676461696625"
+        },
+        {
+            "stop_id": "6542",
+            "stop_name": "Kneeland St @ Washington St",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.350845",
+            "stop_lon": "-71.062866",
+            "distance": "0.16936793923378"
+        },
+        {
+            "stop_id": "9983",
+            "stop_name": "Stuart St @ Charles St S",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.35104",
+            "stop_lon": "-71.066795",
+            "distance": "0.169407889246941"
+        },
+        {
+            "stop_id": "8281",
+            "stop_name": "285 Tremont St",
+            "parent_station": "",
+            "parent_station_name": "",
+            "stop_lat": "42.350086",
+            "stop_lon": "-71.065254",
+            "distance": "0.19760525226593"
+        }
+    ]
+}

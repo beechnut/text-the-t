@@ -1,0 +1,4 @@
+Stop #{@stop.id}: #{@stop.name}
+- @predictions.each do |route|
+    #{route.name}: #{route.trips.collect{|t| "#{t.time.to_i/60}m"}.join(', ')}
+Message sent at #{@time}. Text ? for help

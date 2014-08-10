@@ -1,0 +1,94 @@
+{
+    "stop_id": "32549",
+    "stop_name": "Eliot St @ Bennett St",
+    "mode": [
+        {
+            "route_type": "3",
+            "mode_name": "Bus",
+            "route": [
+                {
+                    "route_id": "77",
+                    "route_name": "77",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23674845",
+                                    "trip_name": "9:34 pm from Arlington Heights Busway to Eliot St @ Bennett St",
+                                    "trip_headsign": "Harvard Station via Mass. Ave.",
+                                    "sch_arr_dt": "1407636120",
+                                    "sch_dep_dt": "1407636120",
+                                    "pre_dt": "1407635940",
+                                    "pre_away": "1018",
+                                    "vehicle": {
+                                        "vehicle_id": "y0751",
+                                        "vehicle_lat": "42.4094352722168",
+                                        "vehicle_lon": "-71.147102355957",
+                                        "vehicle_timestamp": "1407634858"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "route_id": "78",
+                    "route_name": "78",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23674354",
+                                    "trip_name": "9:15 pm from Wadsworth Rd @ Dow Ave to Eliot St @ Bennett St",
+                                    "trip_headsign": "Harvard Station via Park Circle & Blanchard",
+                                    "sch_arr_dt": "1407634560",
+                                    "sch_dep_dt": "1407634560",
+                                    "pre_dt": "1407635040",
+                                    "pre_away": "118",
+                                    "vehicle": {
+                                        "vehicle_id": "y0729",
+                                        "vehicle_lat": "42.3797264099121",
+                                        "vehicle_lon": "-71.1262435913086",
+                                        "vehicle_timestamp": "1407634863"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "route_id": "96",
+                    "route_name": "96",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23692353",
+                                    "trip_name": "9:45 pm from Medford Sq @ City Hall Parking lot to Eliot St @ Bennett St",
+                                    "trip_headsign": "Harvard Station via Davis Square",
+                                    "sch_arr_dt": "1407636600",
+                                    "sch_dep_dt": "1407636600",
+                                    "pre_dt": "1407636300",
+                                    "pre_away": "1378",
+                                    "vehicle": {
+                                        "vehicle_id": "y0722",
+                                        "vehicle_lat": "42.4176979064941",
+                                        "vehicle_lon": "-71.1059722900391",
+                                        "vehicle_timestamp": "1407634845"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "alert_headers": []
+}

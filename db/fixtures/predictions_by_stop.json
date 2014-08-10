@@ -1,0 +1,67 @@
+{
+    "stop_id": "634",
+    "stop_name": "Washington St @ Albano St",
+    "mode": [
+        {
+            "route_type": "3",
+            "mode_name": "Bus",
+            "route": [
+                {
+                    "route_id": "34",
+                    "route_name": "34",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23594480",
+                                    "trip_name": "5:35 pm from 272 Washington St to Forest Hills Station Upper Busway",
+                                    "trip_headsign": "Forest Hills via Washington St.",
+                                    "sch_arr_dt": "1407620760",
+                                    "sch_dep_dt": "1407620760",
+                                    "pre_dt": "1407620880",
+                                    "pre_away": "445",
+                                    "vehicle": {
+                                        "vehicle_id": "y2118",
+                                        "vehicle_lat": "42.2636642456055",
+                                        "vehicle_lon": "-71.1544723510742",
+                                        "vehicle_timestamp": "1407620330"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "route_id": "34E",
+                    "route_name": "34E",
+                    "direction": [
+                        {
+                            "direction_id": "1",
+                            "direction_name": "Inbound",
+                            "trip": [
+                                {
+                                    "trip_id": "23594463",
+                                    "trip_name": "5:15 pm from Walpole Station Elm St Lot to Forest Hills Station Upper Busway",
+                                    "trip_headsign": "Forest Hills Station via Dedham Mall",
+                                    "sch_arr_dt": "1407622320",
+                                    "sch_dep_dt": "1407622320",
+                                    "pre_dt": "1407622320",
+                                    "pre_away": "1885",
+                                    "vehicle": {
+                                        "vehicle_id": "y2110",
+                                        "vehicle_lat": "42.2245101928711",
+                                        "vehicle_lon": "-71.1869430541992",
+                                        "vehicle_timestamp": "1407620372"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "alert_headers": []
+}

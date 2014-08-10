@@ -5,6 +5,7 @@ gem 'sinatra'
 gem 'tux' # console
 
 gem 'geocoder'
+gem 'mbta-realtime'
 
 # Postgres database
 gem 'activerecord'
